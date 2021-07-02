@@ -3,8 +3,11 @@ import styles from '../styles/Home.module.scss'
 import RingIcon from '../assets/ring.svg';
 import TextCycleIcon from '../assets/text-cycle.svg';
 import HalfRingIcon from '../assets/half-ring.svg';
+import {useState} from "react";
+import AboutList from "../components/AboutList";
 
 export default function Home() {
+    const [aboutList, setAboutList] = useState([]);
     return (
         <div className={styles.container}>
             <Head>
@@ -47,21 +50,7 @@ export default function Home() {
                             carefully crafted communication. Through close collaboration with our clients we tell
                             stories through the most effective means of communication.
                         </p>
-                        <ul>
-                            <li>
-                                <h2>Storytelling</h2>
-                                <p>We help non-profits, governmental agencies, ethical businesses and
-                                    research institutes speak directly to their audience with carefully crafted</p>
-                            </li>
-                            <li>Branding</li>
-                            <li>Web design & development</li>
-                            <li>Search engine optimization</li>
-                            <li>Illustrations & animations</li>
-                            <li>Marketing strategies</li>
-                            <li>Data based solutions</li>
-                            <li>E-commerce</li>
-                            <li>Copy-writing</li>
-                        </ul>
+                        <AboutList/>
                     </div>
 
                 </section>

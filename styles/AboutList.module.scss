@@ -1,0 +1,39 @@
+@use "colors.module";
+
+
+.aboutList {
+    margin-top: 75px;
+
+    li {
+      border-bottom: 2px solid black;
+      padding: 35px 0;
+      font-size: 24px !important;
+      color: colors.$clr-red;
+
+      div {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1500ms linear;
+      }
+
+      .showText {
+        max-height: 100px;
+      }
+
+      button {
+        width: 100%;
+        text-align: start;
+
+        h2 {
+          color: black;
+          font-size: 48px;
+          width: 100%;
+        }
+      }
+    }
+
+}
+
+.noBorder {
+  border: none;
+}
