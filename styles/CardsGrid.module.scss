@@ -1,0 +1,18 @@
+@use "colors.module";
+
+
+.cardsGrid {
+  display: flex;
+  margin: 900px 0;
+  overflow: auto;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none
+  }
+}
+

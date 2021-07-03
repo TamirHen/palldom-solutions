@@ -51,7 +51,6 @@ export default function AboutList() {
     ]);
 
     const onSkillClickHandler = (index) => {
-
         const skill = {...aboutList[index]}
         aboutList.forEach(skl => {
             skl.isOpen = false;
@@ -59,28 +58,25 @@ export default function AboutList() {
         // If skill already open close it
         if (skill.isOpen) {
             setAboutList([...aboutList]);
+        } else {
+            skill.isOpen = !skill.isOpen;
+            aboutList[index] = skill;
+            setAboutList([...aboutList]);
         }
-        skill.isOpen = !skill.isOpen;
-        aboutList[index] = skill;
-        setAboutList([...aboutList]);
     }
 
     return (
         <ul className={styles.aboutList}>
             {
                 aboutList.map((skill, index) => (
-                    <li key={index + '-' + skill.header} style={skill.isOpen ? {border: 'none'} : {}}>
+                    <li key={index + '-' + skill.header}>
+                        {console.log(skill)
+                        }
                         <button onClick={() => onSkillClickHandler(index)}><h2>{skill.header}</h2></button>
                         <div className={skill.isOpen ? styles.showText : ''}>{skill.text}</div>
                     </li>
                 ))
             }
-            <li>
-                <button><h2>Storytelling</h2></button>
-                <div>
-
-                </div>
-            </li>
         </ul>
     )
 }

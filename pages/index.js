@@ -2,12 +2,16 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import RingIcon from '../assets/ring.svg';
 import TextCycleIcon from '../assets/text-cycle.svg';
+import TextCycleBlackIcon from '../assets/text-cycle-service.svg';
 import HalfRingIcon from '../assets/half-ring.svg';
-import {useState} from "react";
 import AboutList from "../components/AboutList";
+import CardsGrid from "../components/CardsGrid";
+import EladCard from "../assets/elad-card.svg";
+import TamirCard from "../assets/tamir-card.svg";
+import ExampleCard from "../assets/example-card.svg";
+import React from "react";
 
 export default function Home() {
-    const [aboutList, setAboutList] = useState([]);
     return (
         <div className={styles.container}>
             <Head>
@@ -20,9 +24,9 @@ export default function Home() {
                 <TextCycleIcon className={styles.textCycle}/>
                 <div className={styles.ringWrapper}>
                     <RingIcon className={styles.ring}/>
-                    <p>Palldom is a full service design agency<br/>that drives positive change around social,<br/>economic,
-                        and environmental issues.<br/>Through creative communication and<br/>strategy, we build
-                        experiences that inspire<br/>dialogue and action.</p>
+                    <p>Palldom is a full service design agency that drives positive change around social,<br/>economic,
+                        and environmental issues. Through creative communication and strategy, we build
+                        experiences that inspire dialogue and action.</p>
                 </div>
                 <section className={styles.sectionHome}>
                     <div className={styles.linksWrapper}>
@@ -53,6 +57,35 @@ export default function Home() {
                         <AboutList/>
                     </div>
 
+                </section>
+                <TextCycleIcon className={styles.textCycle}/>
+                <div className={styles.ringWrapper}>
+                    <RingIcon className={styles.ring}/>
+                    <p>We are designers, researchers, artists, writers, and developers that communicate in imaginative
+                        and impactful ways to create meaningful social and environmental change.
+                    </p>
+                </div>
+                <section className={styles.sectionWhatWeDo}>
+                    <h1>
+                        WHO WE<br/>
+                        ARE & WHAT<br/>
+                        WE DO
+                    </h1>
+                    <CardsGrid>
+                        <EladCard className={styles.card}/>
+                        <TamirCard className={styles.card}/>
+                        <ExampleCard className={styles.card}/>
+                        <EladCard className={styles.card}/>
+                        <TamirCard className={styles.card}/>
+                        <ExampleCard className={styles.card}/>
+                    </CardsGrid>
+                </section>
+                <TextCycleBlackIcon className={styles.smallRing}/>
+                <section className={styles.sectionOurWork}>
+                    <h1>
+                        OUR<br/>
+                        WORK
+                    </h1>
                 </section>
             </main>
 
