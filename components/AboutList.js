@@ -70,8 +70,6 @@ export default function AboutList() {
             {
                 aboutList.map((skill, index) => (
                     <li key={index + '-' + skill.header}>
-                        {console.log(skill)
-                        }
                         <button onClick={() => onSkillClickHandler(index)}><h2>{skill.header}</h2></button>
                         <div className={skill.isOpen ? styles.showText : ''}>{skill.text}</div>
                     </li>

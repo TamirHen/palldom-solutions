@@ -10,7 +10,7 @@ $page-padding-left: 17%;
 
 .main {
   flex: 1;
-  padding: 100px 0 0 $page-padding-left;
+  padding-top: 100px;
   position: relative;
 
   .textCycle {
@@ -29,6 +29,7 @@ $page-padding-left: 17%;
   section {
     z-index: 1;
     position: relative;
+    padding-left: $page-padding-left;
 
     h1 {
       font-weight: 400;
@@ -62,6 +63,12 @@ $page-padding-left: 17%;
 
       button {
         margin: 3px 0;
+        transition: color, transform 200ms;
+
+        &:hover {
+          color: colors.$clr-red;
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -130,7 +137,7 @@ $page-padding-left: 17%;
 
   .sectionOurWork {
     background-color: colors.$clr-red;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     padding: 50px 0 100px $page-padding-left;
@@ -143,14 +150,56 @@ $page-padding-left: 17%;
   }
 }
 
-.card {
+.cardWrapper {
+  position: relative;
   cursor: pointer;
-  margin: 0 10px;
+  margin: 10px;
   transition: transform 500ms ease;
-  min-width: 309px;
+  overflow: hidden;
+
+  .arrow {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: transform 150ms ease-out;
+  }
+
+  h2, h3 {
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    color: white;
+  }
+
+  .avatarCardText {
+    transition: transform 200ms ease-out;
+  }
+
+  .ourWorkCardText {
+    transition: transform 200ms ease-out;
+    bottom: 20px;
+    left: 40px;
+  }
+
+  .card {
+    min-width: 309px;
+    border-radius: 3px;
+  }
 
   &:hover {
     transform: scale(.9);
+
+    .arrow {
+      transform: translate(50px, -50px);
+    }
+
+    .avatarCardText {
+      transform: translate(160px, -20px) scale(1.3);
+    }
+
+    .ourWorkCardText {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -161,12 +210,17 @@ $page-padding-left: 17%;
   flex-direction: column;
   padding: 5px;
   align-items: center;
+
   .contactInfo {
     width: 65%;
     display: flex;
     flex-direction: column;
     font-size: 28px;
     padding: 100px 0;
+
+    a {
+      margin: 15px 0;
+    }
 
     a {
       text-decoration: underline;

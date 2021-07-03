@@ -8,8 +8,8 @@ import AboutList from "../components/AboutList";
 import CardsGrid from "../components/CardsGrid";
 import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
+import CardArrowIcon from "../assets/card-arrow.svg";
 import WorkExample from "../assets/work1.svg";
-import ExampleCard from "../assets/example-card.svg";
 import React from "react";
 
 export default function Home() {
@@ -73,12 +73,36 @@ export default function Home() {
                         WE DO
                     </h1>
                     <CardsGrid>
-                        <EladCard className={styles.card}/>
-                        <TamirCard className={styles.card}/>
-                        <ExampleCard className={styles.card}/>
-                        <EladCard className={styles.card}/>
-                        <TamirCard className={styles.card}/>
-                        <ExampleCard className={styles.card}/>
+                        <div className={styles.cardWrapper}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>ELAD</h2>
+                            <EladCard className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>TAMIR</h2>
+                            <TamirCard className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>ELAD</h2>
+                            <EladCard className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>TAMIR</h2>
+                            <TamirCard className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>ELAD</h2>
+                            <EladCard className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>TAMIR</h2>
+                            <TamirCard className={styles.card}/>
+                        </div>
                     </CardsGrid>
                 </section>
                 <TextCycleBlackIcon className={styles.smallRing}/>
@@ -88,11 +112,31 @@ export default function Home() {
                         WORK
                     </h1>
                     <CardsGrid>
-                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
-                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
-                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
-                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
-                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
+                        <div className={styles.cardWrapper}>
+                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                social event co-op</h3>
+                            <WorkExample className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                social event co-op</h3>
+                            <WorkExample className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                social event co-op</h3>
+                            <WorkExample className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                social event co-op</h3>
+                            <WorkExample className={styles.card}/>
+                        </div>
+                        <div className={styles.cardWrapper}>
+                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                social event co-op</h3>
+                            <WorkExample className={styles.card}/>
+                        </div>
                     </CardsGrid>
                 </section>
             </main>
@@ -102,7 +146,7 @@ export default function Home() {
                        className={styles.emailLink}>info@palldomsolutions.com</a>
                     <p>Canada</p>
                     <p>Vancouver, BC</p>
-                    <a href='tel:+1(236)5121151'>+1(236)5121151</a>
+                    <a href='tel:+1(236)5121151'>+1 (236) 512-1151</a>
                 </div>
                 <h6>{`© ${new Date().getFullYear()} PALLDOM SOLUTIONS. All rights reserved.`}</h6>
             </footer>
