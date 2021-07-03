@@ -10,9 +10,10 @@ import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
 import CardArrowIcon from "../assets/card-arrow.svg";
 import WorkExample from "../assets/work1.svg";
-import React from "react";
+import Fade from 'react-reveal/Fade';
 
 export default function Home() {
+
     return (
         <div className={styles.container}>
             <Head>
@@ -38,11 +39,12 @@ export default function Home() {
                     <h2>PALLDOM</h2>
                     <h3>SOLUTIONS</h3>
 
-
                     <h1>
-                        WE BUILD AND<br/>
-                        DESIGN FOR <br/>
-                        THE FUTURE
+                        <Fade bottom cascade>
+                            {`WE BUILD AND`}
+                            {`DESIGN FOR`}
+                            {`THE FUTURE`}
+                        </Fade>
                     </h1>
                 </section>
 
