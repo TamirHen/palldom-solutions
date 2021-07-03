@@ -96,8 +96,15 @@ export default function Home() {
                     </CardsGrid>
                 </section>
             </main>
-
             <footer className={styles.footer}>
+                <div className={styles.contactInfo}>
+                    <a href='mailto:info@palldomsolutions.com'
+                       className={styles.emailLink}>info@palldomsolutions.com</a>
+                    <p>Canada</p>
+                    <p>Vancouver, BC</p>
+                    <a href='tel:+1(236)5121151'>+1(236)5121151</a>
+                </div>
+                <h6>{`© ${new Date().getFullYear()} PALLDOM SOLUTIONS. All rights reserved.`}</h6>
             </footer>
         </div>
     )
