@@ -51,11 +51,18 @@ export default function Home() {
                 <section className={styles.sectionAbout}>
                     <HalfRingIcon className={styles.halfRingIcon}/>
                     <div className={styles.textWrapper}>
-                        <h1>WHAT WE DO</h1>
+                        <h1>
+                            <Fade bottom cascade>
+                                WHAT WE DO
+                            </Fade>
+                        </h1>
                         <p>
-                            We help people, business, organizations and institutes speak directly to their audience with
-                            carefully crafted communication. Through close collaboration with our clients we tell
-                            stories through the most effective means of communication.
+                            <Fade bottom cascade>
+                                {`We help people, business, organizations and institutes speak`}
+                                {`directly to their audience with carefully crafted communication.`}
+                                {`Through close collaboration with our clients we tell`}
+                                {`stories through the most effective means of communication.`}
+                            </Fade>
                         </p>
                         <AboutList/>
                     </div>
@@ -70,9 +77,11 @@ export default function Home() {
                 </div>
                 <section className={styles.sectionWhatWeDo}>
                     <h1>
-                        WHO WE<br/>
-                        ARE & WHAT<br/>
-                        WE DO
+                        <Fade bottom cascade>
+                            {`WHO WE`}
+                            {`ARE & WHAT`}
+                            {`WE DO`}
+                        </Fade>
                     </h1>
                     <CardsGrid>
                         <div className={styles.cardWrapper}>
@@ -110,8 +119,10 @@ export default function Home() {
                 <TextCycleBlackIcon className={styles.smallRing}/>
                 <section className={styles.sectionOurWork}>
                     <h1>
-                        OUR<br/>
-                        WORK
+                        <Fade bottom cascade>
+                            {`OUR`}
+                            {`WORK`}
+                        </Fade>
                     </h1>
                     <CardsGrid>
                         <div className={styles.cardWrapper}>
@@ -144,11 +155,13 @@ export default function Home() {
             </main>
             <footer className={styles.footer}>
                 <div className={styles.contactInfo}>
-                    <a href='mailto:info@palldomsolutions.com'
-                       className={styles.emailLink}>info@palldomsolutions.com</a>
-                    <p>Canada</p>
-                    <p>Vancouver, BC</p>
-                    <a href='tel:+1(236)5121151'>+1 (236) 512-1151</a>
+                    <Fade bottom cascade>
+                        <a href='mailto:info@palldomsolutions.com'
+                           className={styles.emailLink}>info@palldomsolutions.com</a>
+                        <p>Canada</p>
+                        <p>Vancouver, BC</p>
+                        <a href='tel:+1(236)5121151'>+1 (236) 512-1151</a>
+                    </Fade>
                 </div>
                 <h6>{`© ${new Date().getFullYear()} PALLDOM SOLUTIONS. All rights reserved.`}</h6>
             </footer>

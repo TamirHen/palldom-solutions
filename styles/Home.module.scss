@@ -3,7 +3,7 @@
 $page-padding-left: 17%;
 
 .container {
-  min-height: 7200px;
+  min-height: 6500px;
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +22,7 @@ $page-padding-left: 17%;
     animation-name: rotation;
 
     &:nth-of-type(1) {
-      top: 3000px;
+      top: 2500px;
     }
   }
 
@@ -51,7 +51,7 @@ $page-padding-left: 17%;
   }
 
   .sectionHome {
-    margin-bottom: 1000px;
+    margin-bottom: 800px;
 
     .linksWrapper {
       display: flex;
@@ -99,7 +99,7 @@ $page-padding-left: 17%;
     height: 500px;
     width: auto;
     position: absolute;
-    top: 5750px;
+    top: 5300px;
     right: -100px;
     animation: 42s linear infinite;
     animation-name: rotation;
@@ -107,7 +107,7 @@ $page-padding-left: 17%;
 
   .sectionAbout {
     position: relative;
-    margin-bottom: 700px;
+    margin-bottom: 200px;
 
     .halfRingIcon {
       position: absolute;
@@ -127,11 +127,13 @@ $page-padding-left: 17%;
   }
 
   .sectionWhatWeDo {
+    margin-bottom: 700px;
+    padding-top: 100px;
+
     h1 {
       margin-bottom: 750px;
     }
 
-    margin-bottom: 700px;
   }
 
   .sectionOurWork {
@@ -141,7 +143,7 @@ $page-padding-left: 17%;
     right: 0;
     padding: 50px 0 100px $page-padding-left;
     width: 100vw;
-    height: 800px;
+    height: 840px;
 
     h1 {
       color: white;
@@ -221,10 +223,6 @@ $page-padding-left: 17%;
       margin: 15px 0;
     }
 
-    a {
-      text-decoration: underline;
-    }
-
     .emailLink {
       font-size: 40px;
     }
@@ -247,3 +245,8 @@ $page-padding-left: 17%;
     transform: rotate(359deg);
   }
 }
+
+//@media (max-width: 1500) {
+//
+//
+//}

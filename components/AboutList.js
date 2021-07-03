@@ -1,5 +1,6 @@
 import {useState} from "react";
 import styles from '../styles/AboutList.module.scss';
+import Fade from 'react-reveal/Fade';
 
 export default function AboutList() {
     const [aboutList, setAboutList] = useState([
@@ -70,7 +71,9 @@ export default function AboutList() {
             {
                 aboutList.map((skill, index) => (
                     <li key={index + '-' + skill.header}>
-                        <button onClick={() => onSkillClickHandler(index)}><h2>{skill.header}</h2></button>
+                        <Fade bottom cascade>
+                            <button onClick={() => onSkillClickHandler(index)}><h2>{skill.header}</h2></button>
+                        </Fade>
                         <div className={skill.isOpen ? styles.showText : ''}>{skill.text}</div>
                     </li>
                 ))

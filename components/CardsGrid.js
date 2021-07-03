@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../styles/CardsGrid.module.scss'
 import HorizontalScroll from "react-scroll-horizontal";
+import Fade from "react-reveal/Fade";
 
 
 const CardsGrid = ({children}) => {
@@ -11,7 +12,9 @@ const CardsGrid = ({children}) => {
                 reverseScroll
                 className={styles.horizontalScroll}
             >
-                {children}
+                <Fade right big>
+                    {children}
+                </Fade>
             </HorizontalScroll>
         </div>
     );
