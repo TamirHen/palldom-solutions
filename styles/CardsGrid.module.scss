@@ -3,9 +3,18 @@
 
 .cardsGrid {
   display: flex;
-  margin: 900px 0;
   overflow: auto;
-  scroll-behavior: smooth;
+  height: fit-content;
+  padding-right: 30px;
+
+  .horizontalScroll {
+    position: static !important;
+    height: inherit !important;
+
+    div {
+      height: inherit !important;
+    }
+  }
 
   &::-webkit-scrollbar {
     width: 0;

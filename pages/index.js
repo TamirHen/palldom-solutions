@@ -8,6 +8,7 @@ import AboutList from "../components/AboutList";
 import CardsGrid from "../components/CardsGrid";
 import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
+import WorkExample from "../assets/work1.svg";
 import ExampleCard from "../assets/example-card.svg";
 import React from "react";
 
@@ -86,6 +87,13 @@ export default function Home() {
                         OUR<br/>
                         WORK
                     </h1>
+                    <CardsGrid>
+                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
+                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
+                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
+                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
+                        <WorkExample className={styles.card} style={{height: '280px', width: 'auto'}}/>
+                    </CardsGrid>
                 </section>
             </main>
 
