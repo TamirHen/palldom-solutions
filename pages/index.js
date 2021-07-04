@@ -11,8 +11,12 @@ import TamirCard from "../assets/tamir-card.svg";
 import CardArrowIcon from "../assets/card-arrow.svg";
 import WorkExample from "../assets/work1.svg";
 import Fade from 'react-reveal/Fade';
+import {useRef} from "react";
 
 export default function Home() {
+    const aboutSection = useRef();
+    const ourWorkSection = useRef();
+    const contactSection = useRef();
 
     return (
         <div className={styles.container}>
@@ -32,9 +36,9 @@ export default function Home() {
                 </div>
                 <section className={styles.sectionHome}>
                     <div className={styles.linksWrapper}>
-                        <button>ABOUT</button>
-                        <button>CONTACT</button>
-                        <button>OUR WORK</button>
+                        <button onClick={() => aboutSection.current.scrollIntoView()}>ABOUT</button>
+                        <button onClick={() => ourWorkSection.current.scrollIntoView()}>OUR WORK</button>
+                        <button onClick={() => contactSection.current.scrollIntoView()}>CONTACT</button>
                     </div>
                     <h2>PALLDOM</h2>
                     <h3>SOLUTIONS</h3>
@@ -48,7 +52,7 @@ export default function Home() {
                     </h1>
                 </section>
 
-                <section className={styles.sectionAbout}>
+                <section ref={aboutSection} className={styles.sectionAbout}>
                     <HalfRingIcon className={styles.halfRingIcon}/>
                     <div className={styles.textWrapper}>
                         <h1>
@@ -129,7 +133,7 @@ export default function Home() {
                     </CardsGrid>
                 </section>
                 <TextCycleBlackIcon className={styles.smallRing}/>
-                <section className={styles.sectionOurWork}>
+                <section ref={ourWorkSection} className={styles.sectionOurWork}>
                     <h1>
                         <Fade bottom cascade>
                             {`OUR`}
@@ -182,7 +186,7 @@ export default function Home() {
                     </CardsGrid>
                 </section>
             </main>
-            <footer className={styles.footer}>
+            <footer ref={contactSection} className={styles.footer}>
                 <div className={styles.contactInfo}>
                     <Fade bottom cascade>
                         <a href='mailto:info@palldomsolutions.com'
