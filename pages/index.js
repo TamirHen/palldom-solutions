@@ -27,7 +27,7 @@ export default function Home() {
                 <div className={styles.ringWrapper}>
                     <RingIcon className={styles.ring}/>
                     <p>Palldom is a full service design agency that drives positive change around social,<br/>economic,
-                        and environmental issues. Through creative communication and strategy, we build
+                        and environmental issues.<br/>Through creative communication and strategy, we build
                         experiences that inspire dialogue and action.</p>
                 </div>
                 <section className={styles.sectionHome}>
@@ -56,14 +56,14 @@ export default function Home() {
                                 WHAT WE DO
                             </Fade>
                         </h1>
-                        <p>
-                            <Fade bottom cascade>
+                        <Fade bottom cascade>
+                            <h2>
                                 {`We help people, business, organizations and institutes speak`}
-                                {`directly to their audience with carefully crafted communication.`}
-                                {`Through close collaboration with our clients we tell`}
+                                {`directly to their audience with carefully crafted communication.`}<br/>
+                                {`Through close collaboration with our clients we tell `}
                                 {`stories through the most effective means of communication.`}
-                            </Fade>
-                        </p>
+                            </h2>
+                        </Fade>
                         <AboutList/>
                     </div>
 
@@ -84,35 +84,47 @@ export default function Home() {
                         </Fade>
                     </h1>
                     <CardsGrid>
-                        <div className={styles.cardWrapper}>
-                            <CardArrowIcon className={styles.arrow}/>
-                            <h2 className={styles.avatarCardText}>ELAD</h2>
-                            <EladCard className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <CardArrowIcon className={styles.arrow}/>
+                                <h2 className={styles.avatarCardText}>ELAD</h2>
+                                <EladCard className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <CardArrowIcon className={styles.arrow}/>
-                            <h2 className={styles.avatarCardText}>TAMIR</h2>
-                            <TamirCard className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <CardArrowIcon className={styles.arrow}/>
+                                <h2 className={styles.avatarCardText}>TAMIR</h2>
+                                <TamirCard className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <CardArrowIcon className={styles.arrow}/>
-                            <h2 className={styles.avatarCardText}>ELAD</h2>
-                            <EladCard className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <CardArrowIcon className={styles.arrow}/>
+                                <h2 className={styles.avatarCardText}>ELAD</h2>
+                                <EladCard className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <CardArrowIcon className={styles.arrow}/>
-                            <h2 className={styles.avatarCardText}>TAMIR</h2>
-                            <TamirCard className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <CardArrowIcon className={styles.arrow}/>
+                                <h2 className={styles.avatarCardText}>TAMIR</h2>
+                                <TamirCard className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <CardArrowIcon className={styles.arrow}/>
-                            <h2 className={styles.avatarCardText}>ELAD</h2>
-                            <EladCard className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <CardArrowIcon className={styles.arrow}/>
+                                <h2 className={styles.avatarCardText}>ELAD</h2>
+                                <EladCard className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <CardArrowIcon className={styles.arrow}/>
-                            <h2 className={styles.avatarCardText}>TAMIR</h2>
-                            <TamirCard className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <CardArrowIcon className={styles.arrow}/>
+                                <h2 className={styles.avatarCardText}>TAMIR</h2>
+                                <TamirCard className={styles.card}/>
+                            </div>
                         </div>
                     </CardsGrid>
                 </section>
@@ -125,30 +137,47 @@ export default function Home() {
                         </Fade>
                     </h1>
                     <CardsGrid>
-                        <div className={styles.cardWrapper}>
-                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
-                                social event co-op</h3>
-                            <WorkExample className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                    social event co-op</h3>
+                                <WorkExample className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
-                                social event co-op</h3>
-                            <WorkExample className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                    social event co-op</h3>
+                                <WorkExample className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
-                                social event co-op</h3>
-                            <WorkExample className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                    social event co-op</h3>
+                                <WorkExample className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
-                                social event co-op</h3>
-                            <WorkExample className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                    social event co-op</h3>
+                                <WorkExample className={styles.card}/>
+                            </div>
                         </div>
-                        <div className={styles.cardWrapper}>
-                            <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
-                                social event co-op</h3>
-                            <WorkExample className={styles.card}/>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                    social event co-op</h3>
+                                <WorkExample className={styles.card}/>
+                            </div>
+                        </div>
+                        <div className={styles.shrink}>
+                            <div className={styles.cardWrapper}>
+                                <h3 className={styles.ourWorkCardText}>PlayGround Productions<br/>
+                                    social event co-op</h3>
+                                <WorkExample className={styles.card}/>
+                            </div>
                         </div>
                     </CardsGrid>
                 </section>
