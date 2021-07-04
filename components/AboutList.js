@@ -71,7 +71,7 @@ export default function AboutList() {
             {
                 aboutList.map((skill, index) => (
                     <li key={index + '-' + skill.header}>
-                        <Fade bottom cascade>
+                        <Fade bottom>
                             <button onClick={() => onSkillClickHandler(index)}><h2>{skill.header}</h2></button>
                         </Fade>
                         <div className={skill.isOpen ? styles.showText : ''}>{skill.text}</div>
