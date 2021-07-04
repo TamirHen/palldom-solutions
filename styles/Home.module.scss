@@ -160,15 +160,18 @@ $page-padding-left: 17%;
     }
   }
 
-  .smallRing {
+  .smallRingWrapper {
     z-index: 2;
-    height: 500px;
-    width: auto;
     position: absolute;
-    top: 5300px;
     right: -100px;
-    animation: 42s linear infinite;
-    animation-name: rotation;
+    top: 5200px;
+
+    .smallRing {
+      height: 500px;
+      width: auto;
+      animation: 42s linear infinite;
+      animation-name: rotation;
+    }
   }
 
   .sectionAbout {
@@ -192,6 +195,7 @@ $page-padding-left: 17%;
   .sectionWhatWeDo {
     margin-bottom: 700px;
     padding-top: 100px;
+    z-index: 3;
 
     h1 {
       margin-bottom: 750px;
@@ -378,11 +382,7 @@ $page-padding-left: 17%;
     }
 
     .smallRingWrapper {
-      top: 4800px;
-      overflow: hidden;
-
-      .smallRing {
-      }
+      top: 4700px;
     }
 
   }
@@ -436,8 +436,8 @@ $page-padding-left: 17%;
       }
     }
 
-    .smallRing {
-      top: 4500px;
+    .smallRingWrapper {
+      top: 4210px;
     }
   }
 
@@ -529,9 +529,14 @@ $page-padding-left: 17%;
       height: 700px;
     }
 
-    .smallRing {
-      top: 3900px;
+    .smallRingWrapper {
+      top: 3620px;
+
+      .smallRing {
+        height: 380px;
+      }
     }
+
   }
 
   .cardWrapper {
@@ -550,26 +555,18 @@ $page-padding-left: 17%;
     }
   }
 
-  .footer {
-
-    .emailLink {
-      font-size: 32px;
-    }
-
-    .contactInfoWrapper {
-
-      .contactInfo {
-        font-size: 22px;
-      }
-    }
-  }
-
 }
 
 @media (max-width: 800px) {
-  .main {
+  $page-padding-left: 8%;
+
+  .sideMenuWrapper {
+    visibility: hidden;
+  }
+    .main {
 
     section {
+      padding-left: $page-padding-left;
       h1 {
         font-size: 80px;
       }
@@ -585,79 +582,67 @@ $page-padding-left: 17%;
     }
 
     span {
-      font-size: 66px;
+      font-size: 60px;
     }
 
     .ringWrapper {
-      font-size: 20px;
-      right: 5%;
+      font-size: 22px;
+      padding-left: $page-padding-left;
+      width: 100vw;
 
       .ring {
         height: 500px;
+        position: relative;
+        right: -230px;
       }
 
       p {
-        width: 400px;
+        width: 100%;
+        padding-left: 8%;
       }
     }
 
     .sectionHome {
-      margin-bottom: 500px;
-
-      .title {
-        font-size: 26px;
-      }
-
       .linksWrapper {
         button {
-          font-size: 13px;
+          &:hover {
+            color: black;
+          }
         }
       }
     }
 
     .sectionWhatWeDo {
-      margin-bottom: 600px;
+      margin-bottom: 550px;
 
       h1 {
-        margin-bottom: 400px;
+        margin-bottom: 320px;
       }
     }
 
     .sectionOurWork {
-      height: 700px;
+      height: 650px;
     }
 
-    .smallRing {
-      top: 3900px;
-    }
-  }
+    .smallRingWrapper {
+      top: 3400px;
 
-  .cardWrapper {
-
-    .card {
-      width: 250px;
-    }
-
-    h2, h3 {
-      bottom: 10px;
-      font-size: 26px !important;
-    }
-
-    .cardWork {
-      width: 350px;
+      .smallRing {
+        height: 350px;
+      }
     }
   }
 
   .footer {
 
     .emailLink {
-      font-size: 32px;
+      font-size: 30px;
     }
 
     .contactInfoWrapper {
 
       .contactInfo {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
   }
