@@ -6,47 +6,42 @@ export default function AboutList() {
     const [aboutList, setAboutList] = useState([
         {
             header: 'Storytelling',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            text: 'You already know who you are and what value you bring to the table. But how do your clients learn about you? Our team can apply an effective communication strategy to make sure that all of your future clients understand and believe in your story too.',
             isOpen: false
         },
         {
             header: 'Branding',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            text: 'An object (service? product?) is just an object, but with the right skills, strategy, and plan, we can develop a deeper connection to between your (service, product) and your clients.',
             isOpen: false
         },
         {
-            header: 'Web design & development',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            header: 'Web Design & Development',
+            text: 'Your website is like a book. An enticing cover, a well organized table of contents, and an opening hook, can go a long way. We can provide you with a website that is interactive and memorable.',
             isOpen: false
         },
         {
-            header: 'Search engine optimization',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            header: 'Search Engine Optimization',
+            text: 'With millions of search options, we can make it much easier for your clients to find the needle in the haystack. Using search engine optimization, our team can lead your clients to your site in no time.',
             isOpen: false
         },
         {
-            header: 'Illustrations & animations',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            header: 'Illustrations & Animations',
+            text: 'Words set the stage, but our illustrations, animations, and an assortment of visual tools will keep your audience visually engaged.',
             isOpen: false
         },
         {
-            header: 'Marketing strategies',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            header: 'Marketing Strategies',
+            text: 'For every pot, there is a lid— just like how every service has its targeted audience. We are here to help you understand the best audience for your product and the most effective way to— not only reach that market, but catch and hold their attention.',
             isOpen: false
         },
         {
-            header: 'Data based solutions',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            header: 'Database Solutions',
+            text: 'Does your website need to manage stocks, record and deliver orders, or offer custom chatbots? For every special need, we have a customized web solution for you.',
             isOpen: false
         },
         {
-            header: 'E-commerce',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
-            isOpen: false
-        },
-        {
-            header: 'Copy-writing',
-            text: 'We help non-profits, governmental agencies, ethical businesses and research institutes speak directly to their audience with carefully crafted',
+            header: 'E-Commerce',
+            text: 'Put yourself on the map. We can help you expand your local networks and find you new clients by creating an online hub for your business.',
             isOpen: false
         }
     ]);

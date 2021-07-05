@@ -1,12 +1,12 @@
-<svg viewBox="0 0 127 115" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0.92334" y="0.788666" width="125.484" height="113.368" fill="black"/>
-    <ellipse cx="45.4917" cy="84.3003" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="45.4917" cy="65.2614" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="45.4917" cy="49.6841" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="45.4917" cy="30.6452" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="63.665" cy="30.6452" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="81.8388" cy="30.6452" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="81.8388" cy="49.6841" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="81.8388" cy="65.2614" rx="4.75973" ry="5.62514" fill="white"/>
-    <ellipse cx="63.665" cy="65.2614" rx="4.75973" ry="5.62514" fill="white"/>
+<svg viewBox="0 0 126 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="125.484" height="113.368" fill="black"/>
+    <circle cx="39.5" cy="92.5" r="6.5" fill="white"/>
+    <circle cx="39.5" cy="69.5" r="6.5" fill="white"/>
+    <circle cx="39.5" cy="46.5" r="6.5" fill="white"/>
+    <circle cx="39.5" cy="23.5" r="6.5" fill="white"/>
+    <circle cx="62.5" cy="22.5" r="6.5" fill="white"/>
+    <circle cx="85.5" cy="22.5" r="6.5" fill="white"/>
+    <circle cx="85.5" cy="45.5" r="6.5" fill="white"/>
+    <circle cx="85.5" cy="68.5" r="6.5" fill="white"/>
+    <circle cx="62.5" cy="69.5" r="6.5" fill="white"/>
 </svg>

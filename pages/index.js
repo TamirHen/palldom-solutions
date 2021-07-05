@@ -8,6 +8,7 @@ import AboutList from "../components/AboutList";
 import CardsGrid from "../components/CardsGrid";
 import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
+import StephCard from "../assets/steph-card.svg";
 import CardArrowIcon from "../assets/card-arrow.svg";
 import WorkExample from "../assets/work1.svg";
 import Fade from 'react-reveal/Fade';
@@ -28,7 +29,7 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Menus/>
+            <Menus aboutSection={aboutSection} ourWorkSection={ourWorkSection} contactSection={contactSection}/>
 
             <main className={styles.main}>
                 <div className={styles.textCycleWrapper}><TextCycleIcon className={styles.textCycle}/></div>
@@ -118,29 +119,8 @@ export default function Home() {
                         <div className={styles.shrink}>
                             <div className={styles.cardWrapper}>
                                 <CardArrowIcon className={styles.arrow}/>
-                                <h2 className={styles.avatarCardText}>ELAD</h2>
-                                <EladCard className={styles.card}/>
-                            </div>
-                        </div>
-                        <div className={styles.shrink}>
-                            <div className={styles.cardWrapper}>
-                                <CardArrowIcon className={styles.arrow}/>
-                                <h2 className={styles.avatarCardText}>TAMIR</h2>
-                                <TamirCard className={styles.card}/>
-                            </div>
-                        </div>
-                        <div className={styles.shrink}>
-                            <div className={styles.cardWrapper}>
-                                <CardArrowIcon className={styles.arrow}/>
-                                <h2 className={styles.avatarCardText}>ELAD</h2>
-                                <EladCard className={styles.card}/>
-                            </div>
-                        </div>
-                        <div className={styles.shrink}>
-                            <div className={styles.cardWrapper}>
-                                <CardArrowIcon className={styles.arrow}/>
-                                <h2 className={styles.avatarCardText}>TAMIR</h2>
-                                <TamirCard className={styles.card}/>
+                                <h2 className={styles.avatarCardText}>STEPH</h2>
+                                <StephCard className={styles.card}/>
                             </div>
                         </div>
                     </CardsGrid>

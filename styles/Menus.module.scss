@@ -6,6 +6,7 @@
   height: 100%;
   z-index: 100;
   display: flex;
+  pointer-events: none;
 
   .mobileNav {
     height: 100%;
@@ -21,6 +22,7 @@
     font-family: 'Domine', serif;
     color: white;
     position: relative;
+    pointer-events: all;
 
     .buttonX {
       position: absolute;
@@ -61,10 +63,12 @@
     top: 0;
     right: 0;
     margin: 4px;
-    height: 45px;
     border-radius: 3px;
-    width: auto;
+    width: 8%;
+    height: auto;
     cursor: pointer;
+    display: none;
+    pointer-events: all;
   }
 
   .sideMenuWrapper {
@@ -72,6 +76,7 @@
     height: 100%;
     display: flex;
     justify-content: flex-start;
+    pointer-events: all;
 
     .sideMenu {
       max-width: 130px;
@@ -89,7 +94,7 @@
         height: auto;
       }
 
-      button {
+      a {
         margin: 10px;
         transition: transform 200ms ease;
 
@@ -137,25 +142,32 @@
 
 @media (max-width: 800px) {
 
-  .sideMenuWrapper {
+  .menusWrapper {
 
-    .sideMenu {
+    .hamburger {
+      display: block;
+    }
 
-      .sideMenuIcon {
-        display: none;
-      }
+    .sideMenuWrapper {
 
-      button {
-        margin: 0 !important;
-      }
+      .sideMenu {
 
-      .socialMediaWrapper {
-        height: 30% !important;
-      }
+        .sideMenuIcon {
+          display: none;
+        }
+
+        a {
+          margin: 0 !important;
+        }
+
+        .socialMediaWrapper {
+          height: 30% !important;
+        }
 
 
-      .icon {
-        width: 65%;
+        .icon {
+          width: 65%;
+        }
       }
     }
   }
