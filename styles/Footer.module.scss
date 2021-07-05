@@ -76,7 +76,7 @@
 
 @media (max-width: 800px) {
   .footer {
-    padding-left: 60px;
+    padding-left: 20%;
 
     .emailLink {
       font-size: 24px;
@@ -98,7 +98,7 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding-left: 50px;
+    padding-left: 15%;
 
     .emailLink {
       font-size: 20px;
@@ -110,11 +110,5 @@
         font-size: 14px;
       }
     }
-  }
-}
-
-@media (max-width: 600px) {
-  .footer {
-    padding-left: 40px;
   }
 }

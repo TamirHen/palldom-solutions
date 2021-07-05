@@ -10,14 +10,10 @@ import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
 import CardArrowIcon from "../assets/card-arrow.svg";
 import WorkExample from "../assets/work1.svg";
-import Logo from "../assets/logo.svg";
-import SideMenuIcon from "../assets/sideMenuIcon.svg";
-import InstagramIcon from "../assets/instagram.svg";
-import LinkedinIcon from "../assets/linkedin.svg";
-import TwitterIcon from "../assets/twitter.svg";
 import Fade from 'react-reveal/Fade';
 import {useRef} from "react";
 import Footer from "../components/Footer";
+import Menus from "../components/Menus";
 
 export default function Home() {
     const aboutSection = useRef();
@@ -31,18 +27,8 @@ export default function Home() {
                 <meta name="description" content="Making your dream website for you"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
-            <div className={styles.sideMenuWrapper}>
-                <nav className={styles.sideMenu}>
-                    <a href="/"><Logo className={styles.logo}/></a>
-                    <div className={styles.socialMediaWrapper}>
-                        <button><LinkedinIcon className={styles.icon}/></button>
-                        <button><InstagramIcon className={styles.icon}/></button>
-                        <button><TwitterIcon className={styles.icon}/></button>
-                    </div>
-                    <SideMenuIcon className={styles.sideMenuIcon}/>
-                </nav>
-            </div>
 
+            <Menus/>
 
             <main className={styles.main}>
                 <div className={styles.textCycleWrapper}><TextCycleIcon className={styles.textCycle}/></div>
