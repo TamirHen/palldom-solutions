@@ -17,6 +17,7 @@ import LinkedinIcon from "../assets/linkedin.svg";
 import TwitterIcon from "../assets/twitter.svg";
 import Fade from 'react-reveal/Fade';
 import {useRef} from "react";
+import Footer from "../components/Footer";
 
 export default function Home() {
     const aboutSection = useRef();
@@ -203,25 +204,7 @@ export default function Home() {
                     </CardsGrid>
                 </section>
             </main>
-            <footer ref={contactSection} className={styles.footer}>
-                <a href='mailto:info@palladomsolutions.com'
-                   className={styles.emailLink}>info@palladomsolutions.com</a>
-                <div className={styles.contactInfoWrapper}>
-                    <div className={styles.contactInfo}>
-                        <p>Canada</p>
-                        <p>Vancouver, BC</p>
-                        <a href='tel:+1(236)5121151'>+1 (236) 512-1151</a>
-                    </div>
-                    <div className={styles.divider}>
-                    </div>
-                    <div className={styles.contactInfo}>
-                        <p>Israel</p>
-                        <p>Tel Aviv</p>
-                        <a href='tel:+972(53)9875975'>+1 (236) 512-1151</a>
-                    </div>
-                </div>
-                <h6>{`© ${new Date().getFullYear()} PALLADOM SOLUTIONS. All rights reserved.`}</h6>
-            </footer>
+            <Footer contactRef={contactSection}/>
         </div>
     )
 }

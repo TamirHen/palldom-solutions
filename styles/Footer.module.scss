@@ -1,0 +1,120 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0 5px 20%;
+  align-items: center;
+
+  a {
+    margin: 15px 0;
+    text-decoration: underline;
+  }
+
+  .emailLink {
+    font-size: 40px;
+    align-self: flex-start;
+  }
+
+  .contactInfoWrapper {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+
+    .contactInfo {
+      display: flex;
+      flex-direction: column;
+      font-size: 28px;
+      padding: 50px 0;
+    }
+
+    .divider {
+      width: 10%;
+      min-width: 20px;
+    }
+
+  }
+
+  h6 {
+    font-weight: 400;
+    bottom: 15px;
+    align-self: flex-end;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+
+    .emailLink {
+      font-size: 32px;
+    }
+
+    .contactInfoWrapper {
+
+      .contactInfo {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+
+    .emailLink {
+      font-size: 30px;
+    }
+
+    .contactInfoWrapper {
+
+      .contactInfo {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    padding-left: 60px;
+
+    .emailLink {
+      font-size: 24px;
+    }
+
+    .contactInfoWrapper {
+
+      .contactInfo {
+        padding: 25px 0;
+        font-size: 16px;
+      }
+    }
+
+    h6 {
+      font-size: 8px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-left: 50px;
+
+    .emailLink {
+      font-size: 20px;
+    }
+
+    .contactInfoWrapper {
+
+      .contactInfo {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding-left: 40px;
+  }
+}
