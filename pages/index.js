@@ -48,9 +48,14 @@ export default function Home() {
                 <div className={styles.textCycleWrapper}><TextCycleIcon className={styles.textCycle}/></div>
                 <div className={styles.ringWrapper}>
                     <RingIcon className={styles.ring}/>
-                    <p>Palldom is a full service design agency that drives positive change around social,<br/>economic,
-                        and environmental issues.<br/>Through creative communication and strategy, we build
-                        experiences that inspire dialogue and action.</p>
+                    <p>
+                        <Fade bottom>
+                            {`Palldom is a full service design agency that drives positive change around social, economic,
+                                and environmental issues.`}
+                            {`Through creative communication and strategy, we build
+                                experiences that inspire dialogue and action.`}
+                        </Fade>
+                    </p>
                 </div>
                 <section className={styles.sectionHome}>
                     <div className={styles.linksWrapper}>
@@ -93,8 +98,12 @@ export default function Home() {
                 <div className={styles.textCycleWrapper}><TextCycleIcon className={styles.textCycle}/></div>
                 <div className={styles.ringWrapper}>
                     <RingIcon className={styles.ring}/>
-                    <p>We are designers, researchers, artists, writers, and developers that communicate in imaginative
-                        and impactful ways to create meaningful social and environmental change.
+                    <p>
+                        <Fade bottom>
+                            We are designers, researchers, artists, writers, and developers that communicate in
+                            imaginative
+                            and impactful ways to create meaningful social and environmental change.
+                        </Fade>
                     </p>
                 </div>
                 <section className={styles.sectionWhatWeDo}>

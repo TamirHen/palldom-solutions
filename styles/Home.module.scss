@@ -85,7 +85,7 @@ $page-padding-left: 17%;
       height: 3000px;
       animation: 42s linear infinite;
       animation-name: rotation;
-
+      transition: height 300ms linear;
     }
   }
 
@@ -156,6 +156,7 @@ $page-padding-left: 17%;
       height: 900px;
       width: auto;
       margin-bottom: 30px;
+      transition: height 300ms linear;
     }
   }
 
@@ -300,6 +301,19 @@ $page-padding-left: 17%;
 @media (max-width: 1400px) {
   .main {
 
+    .textCycleWrapper {
+      top: -950px;
+      left: -460px;
+
+      &:nth-of-type(1) {
+        top: 2200px;
+      }
+
+      .textCycle {
+        height: 2700px;
+      }
+    }
+
     section {
       h2 {
         font-size: 32px;
@@ -348,6 +362,19 @@ $page-padding-left: 17%;
 @media (max-width: 1200px) {
   .main {
     padding-top: 90px;
+
+    .textCycleWrapper {
+      top: -900px;
+      left: -410px;
+
+      &:nth-of-type(1) {
+        top: 1870px;
+      }
+
+      .textCycle {
+        height: 2400px;
+      }
+    }
 
     section {
       h1 {
@@ -399,7 +426,11 @@ $page-padding-left: 17%;
     }
 
     .smallRingWrapper {
-      top: 4210px;
+      top: 4040px;
+
+      .smallRing {
+        height: 420px;
+      }
     }
   }
 
@@ -418,6 +449,19 @@ $page-padding-left: 17%;
 @media (max-width: 1000px) {
   .main {
     padding-top: 80px;
+
+    .textCycleWrapper {
+      top: -700px;
+      left: -340px;
+
+      &:nth-of-type(1) {
+        top: 1650px;
+      }
+
+      .textCycle {
+        height: 2000px;
+      }
+    }
 
     section {
       h1 {
@@ -515,6 +559,19 @@ $page-padding-left: 17%;
   .main {
     padding-top: 50px;
 
+    .textCycleWrapper {
+      top: -580px;
+      left: -420px;
+
+      &:nth-of-type(1) {
+        top: 1550px;
+      }
+
+      .textCycle {
+        height: 1800px;
+      }
+    }
+
     section {
       padding-left: $page-padding-left;
 
@@ -593,6 +650,13 @@ $page-padding-left: 17%;
 @media (max-width: 600px) {
   .main {
     padding-top: 40px;
+
+    .textCycleWrapper {
+
+      &:nth-of-type(1) {
+        top: 1200px;
+      }
+    }
 
     section {
       h1 {
@@ -691,6 +755,19 @@ $page-padding-left: 17%;
 @media (max-width: 400px) {
   .main {
     padding-top: 30px;
+
+    .textCycleWrapper {
+      top: -450px;
+      left: -330px;
+
+      &:nth-of-type(1) {
+        top: 1220px;
+      }
+
+      .textCycle {
+        height: 1400px;
+      }
+    }
 
     section {
       h1 {
