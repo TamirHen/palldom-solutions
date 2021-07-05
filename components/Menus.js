@@ -9,12 +9,8 @@ import SideMenuIcon from "../assets/sideMenuIcon.svg";
 
 const Menus = () => {
     return (
-        <>
-            <div className={styles.topMenuWrapper}>
-                <div className={styles.topMenu}>
-                    <Hamburger className={styles.hamburger}/>
-                </div>
-            </div>
+        <div className={styles.menusWrapper}>
+            <Hamburger className={styles.hamburger}/>
             <div className={styles.sideMenuWrapper}>
                 <nav className={styles.sideMenu}>
                     <a href="/"><Logo className={styles.logo}/></a>
@@ -26,7 +22,12 @@ const Menus = () => {
                     <SideMenuIcon className={styles.sideMenuIcon}/>
                 </nav>
             </div>
-        </>
+            <nav className={styles.mobileNav}>
+                <button>ABOUT</button>
+                <button>OUR WORK</button>
+                <button>CONTACT US</button>
+            </nav>
+        </div>
     );
 };
 

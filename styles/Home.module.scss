@@ -5,13 +5,13 @@ $page-padding-left: 17%;
 .container {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .main {
   flex: 1;
   padding-top: 100px;
   position: relative;
-  overflow: hidden;
 
   .textCycleWrapper {
     overflow: hidden;
@@ -493,7 +493,7 @@ $page-padding-left: 17%;
 }
 
 @media (max-width: 800px) {
-  $page-padding-left: 11%;
+  $page-padding-left: 12%;
 
   .main {
     padding-top: 50px;
@@ -551,11 +551,7 @@ $page-padding-left: 17%;
 
     .sectionHome {
       .linksWrapper {
-        button {
-          &:hover {
-            color: black;
-          }
-        }
+        display: none;
       }
     }
 
@@ -598,6 +594,7 @@ $page-padding-left: 17%;
     }
 
     section {
+
       h1 {
         font-size: 54px;
       }
@@ -625,11 +622,6 @@ $page-padding-left: 17%;
       }
     }
 
-    .sectionHome {
-      .linksWrapper {
-        margin-right: 15px;
-      }
-    }
 
     .sectionAbout {
       margin-bottom: 100px;
@@ -742,14 +734,6 @@ $page-padding-left: 17%;
 
     .sectionHome {
       margin-bottom: 450px;
-
-      .linksWrapper {
-        margin-right: 5px;
-
-        button {
-          font-size: 12px;
-        }
-      }
     }
 
     .sectionWhatWeDo {
