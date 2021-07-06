@@ -24,9 +24,12 @@ const Menus = ({aboutSection, ourWorkSection, contactSection}) => {
                 <nav className={styles.sideMenu}>
                     <a href="/"><Logo className={styles.logo}/></a>
                     <div className={styles.socialMediaWrapper}>
-                        <a href={linkedinUrl} target={"_blank"}><LinkedinIcon className={styles.icon}/></a>
-                        <a href={instagramUrl} target={"_blank"}><InstagramIcon className={styles.icon}/></a>
-                        <a href={twitterUrl} target={"_blank"}><TwitterIcon className={styles.icon}/></a>
+                        <a href={linkedinUrl} target={"_blank"} className={styles.socialMedia}><LinkedinIcon
+                            className={styles.icon}/></a>
+                        <a href={instagramUrl} target={"_blank"} className={styles.socialMedia}><InstagramIcon
+                            className={styles.icon}/></a>
+                        <a href={twitterUrl} target={"_blank"} className={styles.socialMedia}><TwitterIcon
+                            className={styles.icon}/></a>
                     </div>
                     <SideMenuIcon className={styles.sideMenuIcon}/>
                 </nav>

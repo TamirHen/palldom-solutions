@@ -16,16 +16,16 @@ $page-padding-left: 17%;
   .textCycleWrapper {
     overflow: hidden;
     position: absolute;
-    top: -1100px;
-    left: -520px;
+    top: -1330px;
+    left: -590px;
     z-index: 0;
 
     &:nth-of-type(1) {
-      top: 2500px;
+      top: 2100px;
     }
 
     .textCycle {
-      height: 3000px;
+      height: 3400px;
       animation: 42s linear infinite;
       animation-name: rotation;
       transition: height 300ms linear;
@@ -103,30 +103,17 @@ $page-padding-left: 17%;
     }
   }
 
-  .smallRingWrapper {
-    z-index: 2;
-    position: absolute;
-    right: -100px;
-    top: 5200px;
-
-    .smallRing {
-      height: 500px;
-      width: auto;
-      animation: 42s linear infinite;
-      animation-name: rotation;
-    }
-  }
-
   .sectionAbout {
     position: relative;
     margin-bottom: 200px;
 
-    .halfRingIcon {
+    .filledRing {
       position: absolute;
-      height: 1150px;
-      left: -520px;
-      top: -220px;
-      transform: rotate(13deg);
+      height: 1550px;
+      left: -1080px;
+      top: -500px;
+      animation: 12s linear infinite;
+      animation-name: rotation;
     }
 
     .textWrapper {
@@ -154,6 +141,20 @@ $page-padding-left: 17%;
     padding: 50px 0 100px $page-padding-left;
     width: 100vw;
     height: 840px;
+
+    .smallRingWrapper {
+      z-index: 2;
+      position: absolute;
+      right: -100px;
+      top: -200px;
+
+      .smallRing {
+        height: 500px;
+        width: auto;
+        animation: 42s linear infinite;
+        animation-name: rotation;
+      }
+    }
 
     h1 {
       color: white;
@@ -241,6 +242,24 @@ $page-padding-left: 17%;
   }
 }
 
+@media (max-width: 1750px) {
+  .main {
+
+    .textCycleWrapper {
+      top: -1100px;
+      left: -520px;
+
+      &:nth-of-type(1) {
+        top: 2300px;
+      }
+
+      .textCycle {
+        height: 3000px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .main {
 
@@ -295,8 +314,11 @@ $page-padding-left: 17%;
       }
     }
 
-    .smallRingWrapper {
-      top: 4700px;
+    .sectionOurWork {
+
+      .smallRingWrapper {
+        right: -150px;
+      }
     }
 
   }
@@ -368,11 +390,12 @@ $page-padding-left: 17%;
       }
     }
 
-    .smallRingWrapper {
-      top: 4040px;
+    .sectionOurWork {
+      .smallRingWrapper {
 
-      .smallRing {
-        height: 420px;
+        .smallRing {
+          height: 400px;
+        }
       }
     }
   }
@@ -462,13 +485,12 @@ $page-padding-left: 17%;
 
     .sectionOurWork {
       height: 700px;
-    }
 
-    .smallRingWrapper {
-      top: 3620px;
+      .smallRingWrapper {
 
-      .smallRing {
-        height: 380px;
+        .smallRing {
+          height: 360px;
+        }
       }
     }
 
@@ -514,7 +536,7 @@ $page-padding-left: 17%;
       left: -420px;
 
       &:nth-of-type(1) {
-        top: 1550px;
+        top: 1400px;
       }
 
       .textCycle {
@@ -581,13 +603,13 @@ $page-padding-left: 17%;
     .sectionOurWork {
       padding-top: 30px;
       height: 620px;
-    }
 
-    .smallRingWrapper {
-      top: 3200px;
+      .smallRingWrapper {
+        top: -120px;
 
-      .smallRing {
-        height: 320px;
+        .smallRing {
+          height: 320px;
+        }
       }
     }
   }
@@ -601,7 +623,7 @@ $page-padding-left: 17%;
     .textCycleWrapper {
 
       &:nth-of-type(1) {
-        top: 1200px;
+        top: 1100px;
       }
     }
 
@@ -642,13 +664,13 @@ $page-padding-left: 17%;
     .sectionOurWork {
       padding-top: 20px;
       height: 500px;
-    }
 
-    .smallRingWrapper {
-      top: 2750px;
+      .smallRingWrapper {
+        top: -150px;
 
-      .smallRing {
-        height: 290px;
+        .smallRing {
+          height: 280px;
+        }
       }
     }
 
@@ -755,13 +777,12 @@ $page-padding-left: 17%;
 
     .sectionOurWork {
       height: 480px;
-    }
 
-    .smallRingWrapper {
-      top: 2550px;
+      .smallRingWrapper {
 
-      .smallRing {
-        height: 250px;
+        .smallRing {
+          height: 250px;
+        }
       }
     }
   }

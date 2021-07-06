@@ -86,7 +86,7 @@
       align-items: center;
       height: 100%;
       background-color: rgba(colors.$clr-background, .84);
-      border-right: 3px solid white;
+      border-right: 1px solid white;
       padding-bottom: 40px;
 
       .logo {
@@ -94,7 +94,7 @@
         height: auto;
       }
 
-      a {
+      .socialMedia {
         margin: 10px;
         transition: transform 200ms ease;
 

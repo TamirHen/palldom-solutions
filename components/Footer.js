@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "../styles/Footer.module.scss";
+import FilledRingIcon from '../assets/filled-ring.svg';
 
 const Footer = ({contactRef}) => {
     return (
@@ -20,6 +21,7 @@ const Footer = ({contactRef}) => {
                     <a href='tel:+972(53)9875975'>+972 (53) 9875975</a>
                 </div>
             </div>
+            <FilledRingIcon className={styles.filledRing}/>
             <h6>{`© ${new Date().getFullYear()} PALLADOM SOLUTIONS. All rights reserved.`}</h6>
         </footer>
     );

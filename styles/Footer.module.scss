@@ -6,6 +6,7 @@
   padding: 40px 0 5px 20%;
   align-items: center;
   font-family: 'Domine', serif;
+  position: relative;
 
   a {
     margin: 15px 0;
@@ -15,12 +16,14 @@
   .emailLink {
     font-size: 50px;
     align-self: flex-start;
+    z-index: 1;
   }
 
   .contactInfoWrapper {
     display: flex;
     width: 100%;
     align-items: flex-start;
+    z-index: 1;
 
     .contactInfo {
       display: flex;
@@ -36,10 +39,33 @@
 
   }
 
+  .filledRing {
+    position: absolute;
+    height: 700px;
+    width: auto;
+    right: -200px;
+    top: -50px;
+    animation: 42s linear infinite;
+    animation-name: rotation;
+    transition: height 300ms linear;
+    z-index: 0;
+  }
+
   h6 {
     font-weight: 400;
     bottom: 15px;
     align-self: flex-end;
+    z-index: 1;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
   }
 }
 
@@ -56,6 +82,12 @@
         font-size: 22px;
       }
     }
+
+    .filledRing {
+      height: 600px;
+      right: -300px;
+      top: -10px;
+    }
   }
 }
 
@@ -71,6 +103,11 @@
       .contactInfo {
         font-size: 20px;
       }
+    }
+
+    .filledRing {
+      height: 400px;
+      right: -200px;
     }
   }
 }
@@ -110,6 +147,11 @@
       .contactInfo {
         font-size: 14px;
       }
+    }
+
+    .filledRing {
+      height: 300px;
+      top: 50px;
     }
   }
 }

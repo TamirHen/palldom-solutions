@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 import RingIcon from '../assets/ring.svg';
 import TextCycleIcon from '../assets/text-cycle.svg';
 import TextCycleBlackIcon from '../assets/text-cycle-service.svg';
+import FilledRingIcon from '../assets/filled-ring.svg';
 import HalfRingIcon from '../assets/half-ring.svg';
 import AboutList from "../components/AboutList";
 import CardsGrid from "../components/CardsGrid";
@@ -63,7 +64,7 @@ export default function Home() {
                 </section>
 
                 <section ref={aboutSection} className={styles.sectionAbout}>
-                    <HalfRingIcon className={styles.halfRingIcon}/>
+                    {/*<FilledRingIcon className={styles.filledRing}/>*/}
                     <div className={styles.textWrapper}>
                         <h1>
                             <Fade bottom cascade>
@@ -125,8 +126,8 @@ export default function Home() {
                         </div>
                     </CardsGrid>
                 </section>
-                <div className={styles.smallRingWrapper}><TextCycleBlackIcon className={styles.smallRing}/></div>
                 <section ref={ourWorkSection} className={styles.sectionOurWork}>
+                    <div className={styles.smallRingWrapper}><TextCycleBlackIcon className={styles.smallRing}/></div>
                     <h1>
                         <Fade bottom cascade>
                             {`OUR`}
