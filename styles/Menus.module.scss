@@ -10,7 +10,7 @@
 
   .mobileNav {
     height: 100%;
-    width: 90%;
+    width: 100%;
     max-width: 0;
     background-color: black;
     z-index: 102;
@@ -77,9 +77,9 @@
     display: flex;
     justify-content: flex-start;
     pointer-events: all;
+    max-width: 130px;
 
     .sideMenu {
-      max-width: 130px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

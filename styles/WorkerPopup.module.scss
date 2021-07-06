@@ -1,0 +1,151 @@
+@use "colors.module";
+
+
+.popup {
+  height: 100%;
+  width: 100%;
+  max-width: 0;
+  background-color: black;
+  z-index: 102;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: max-width 300ms linear;
+  overflow: hidden;
+  color: white;
+  position: relative;
+  pointer-events: all;
+
+  .workerWrapper {
+    display: flex;
+    padding: 13%;
+    transition: opacity 100ms linear;
+
+    .cardWrapper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .divider {
+      width: 20%;
+    }
+
+    .workerDescription {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 500px;
+      padding-top: 70px;
+
+      h1 {
+        font-size: 48px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 50px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .buttonX {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 40px;
+  }
+
+}
+
+@media (max-width: 1400px) {
+  .popup {
+    .workerWrapper {
+
+      .workerDescription {
+        padding-top: 30px;
+
+        h1 {
+          font-size: 42px;
+        }
+
+        h2 {
+          font-size: 22px;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .popup {
+    .workerWrapper {
+
+      .workerDescription {
+        padding-top: 0;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        h2 {
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .popup {
+    .workerWrapper {
+
+      .divider {
+        display: none;
+      }
+
+      .cardWrapper {
+        display: none;
+      }
+
+      .workerDescription {
+        min-width: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .popup {
+    .workerWrapper {
+      .workerDescription {
+        min-width: 300px;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .popup {
+    .workerWrapper {
+      .workerDescription {
+        min-width: 250px;
+      }
+    }
+  }
+}

@@ -4,7 +4,6 @@ import RingIcon from '../assets/ring.svg';
 import TextCycleIcon from '../assets/text-cycle.svg';
 import TextCycleBlackIcon from '../assets/text-cycle-service.svg';
 import FilledRingIcon from '../assets/filled-ring.svg';
-import HalfRingIcon from '../assets/half-ring.svg';
 import AboutList from "../components/AboutList";
 import CardsGrid from "../components/CardsGrid";
 import EladCard from "../assets/elad-card.svg";
@@ -13,14 +12,22 @@ import StephCard from "../assets/steph-card.svg";
 import CardArrowIcon from "../assets/card-arrow.svg";
 import WorkExample from "../assets/work1.svg";
 import Fade from 'react-reveal/Fade';
-import {useRef} from "react";
+import {useRef, useState} from "react";
 import Footer from "../components/Footer";
 import Menus from "../components/Menus";
+import WorkerPopup from "../components/WorkerPopup";
 
 export default function Home() {
     const aboutSection = useRef();
     const ourWorkSection = useRef();
     const contactSection = useRef();
+    const [isWorkerOpen, setIsWorkerOpen] = useState(false);
+    const [activeWorker, setActiveWorker] = useState(null);
+
+    const workerPressedHandler = (worker) => {
+        setIsWorkerOpen(true);
+        setActiveWorker(worker);
+    }
 
     return (
         <div className={styles.container}>
@@ -30,8 +37,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <Menus aboutSection={aboutSection} ourWorkSection={ourWorkSection} contactSection={contactSection}/>
-
+            <Menus activeWorker={activeWorker} setActiveWorker={setActiveWorker} isWorkerOpen={isWorkerOpen}
+                   setIsWorkerOpen={setIsWorkerOpen} aboutSection={aboutSection} ourWorkSection={ourWorkSection}
+                   contactSection={contactSection}/>
             <main className={styles.main}>
                 <div className={styles.textCycleWrapper}><TextCycleIcon className={styles.textCycle}/></div>
                 <div className={styles.ringWrapper}>
@@ -104,21 +112,21 @@ export default function Home() {
                     </h1>
                     <CardsGrid>
                         <div className={styles.shrink}>
-                            <div className={styles.cardWrapper}>
+                            <div className={styles.cardWrapper} onClick={() => workerPressedHandler('elad')}>
                                 <CardArrowIcon className={styles.arrow}/>
                                 <h2 className={styles.avatarCardText}>ELAD</h2>
                                 <EladCard className={styles.card}/>
                             </div>
                         </div>
                         <div className={styles.shrink}>
-                            <div className={styles.cardWrapper}>
+                            <div className={styles.cardWrapper} onClick={() => workerPressedHandler('tamir')}>
                                 <CardArrowIcon className={styles.arrow}/>
                                 <h2 className={styles.avatarCardText}>TAMIR</h2>
                                 <TamirCard className={styles.card}/>
                             </div>
                         </div>
                         <div className={styles.shrink}>
-                            <div className={styles.cardWrapper}>
+                            <div className={styles.cardWrapper} onClick={() => workerPressedHandler('steph')}>
                                 <CardArrowIcon className={styles.arrow}/>
                                 <h2 className={styles.avatarCardText}>STEPH</h2>
                                 <StephCard className={styles.card}/>

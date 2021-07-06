@@ -6,20 +6,21 @@ import LinkedinIcon from "../assets/linkedin.svg";
 import InstagramIcon from "../assets/instagram.svg";
 import TwitterIcon from "../assets/twitter.svg";
 import SideMenuIcon from "../assets/sideMenuIcon.svg";
+import WorkerPopup from "./WorkerPopup";
 
-const Menus = ({aboutSection, ourWorkSection, contactSection}) => {
-    const [isOpen, setIsOpen] = useState(false);
+const Menus = ({aboutSection, ourWorkSection, contactSection, activeWorker, setActiveWorker, isWorkerOpen, setIsWorkerOpen}) => {
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const linkedinUrl = "https://www.linkedin.com/in/palladom-solutions-b20a47216/";
     const instagramUrl = "/";
     const twitterUrl = "https://twitter.com/PalladomS";
 
     const onButtonClickHandler = (section) => {
-        setIsOpen(false);
+        setIsMobileMenuOpen(false);
         section.current.scrollIntoView();
     }
     return (
         <div className={styles.menusWrapper}>
-            <Hamburger className={styles.hamburger} onClick={() => setIsOpen(true)}/>
+            <Hamburger className={styles.hamburger} onClick={() => setIsMobileMenuOpen(true)}/>
             <div className={styles.sideMenuWrapper}>
                 <nav className={styles.sideMenu}>
                     <a href="/"><Logo className={styles.logo}/></a>
@@ -34,17 +35,18 @@ const Menus = ({aboutSection, ourWorkSection, contactSection}) => {
                     <SideMenuIcon className={styles.sideMenuIcon}/>
                 </nav>
             </div>
-            <nav className={styles.mobileNav} style={{maxWidth: isOpen ? '100%' : '0'}}>
-                <button className={styles.buttonX} onClick={() => setIsOpen(false)}>x</button>
+            <WorkerPopup activeWorker={activeWorker} setActiveWorker={setActiveWorker} isOpen={isWorkerOpen} setIsOpen={setIsWorkerOpen}/>
+            <nav className={styles.mobileNav} style={{maxWidth: isMobileMenuOpen ? '100%' : '0'}}>
+                <button className={styles.buttonX} onClick={() => setIsMobileMenuOpen(false)}>x</button>
                 <div className={styles.buttonsWrapper}>
                     <button onClick={() => onButtonClickHandler(aboutSection)}
-                            style={{opacity: isOpen ? '100%' : '0'}}>ABOUT
+                            style={{opacity: isMobileMenuOpen ? '100%' : '0'}}>ABOUT
                     </button>
                     <button onClick={() => onButtonClickHandler(ourWorkSection)}
-                            style={{opacity: isOpen ? '100%' : '0'}}>OUR WORK
+                            style={{opacity: isMobileMenuOpen ? '100%' : '0'}}>OUR WORK
                     </button>
                     <button onClick={() => onButtonClickHandler(contactSection)}
-                            style={{opacity: isOpen ? '100%' : '0'}}>CONTACT US
+                            style={{opacity: isMobileMenuOpen ? '100%' : '0'}}>CONTACT US
                     </button>
                 </div>
             </nav>
