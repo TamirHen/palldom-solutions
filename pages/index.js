@@ -15,14 +15,13 @@ import Fade from 'react-reveal/Fade';
 import {useRef, useState} from "react";
 import Footer from "../components/Footer";
 import Menus from "../components/Menus";
-import WorkerPopup from "../components/WorkerPopup";
 
 export default function Home() {
     const aboutSection = useRef();
     const ourWorkSection = useRef();
     const contactSection = useRef();
     const [isWorkerOpen, setIsWorkerOpen] = useState(false);
-    const [activeWorker, setActiveWorker] = useState(null);
+    const [activeWorker, setActiveWorker] = useState();
 
     const workerPressedHandler = (worker) => {
         setIsWorkerOpen(true);

@@ -14,7 +14,7 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                     description: 'Carly is Pact Media\'s Co-Founder and CEO. She has worked in marketing, design and business development in NY and run and directed several successful companies. Over the last 7 years she has invested her efforts in making real, lasting change with some of the world’s top scientific and philanthropic institutions globally.\n' +
                         '\n' +
                         'She has extensive experience in helping clients build internationally renowned projects from the ground up, using design to present complex concepts in dynamic and digestible formats',
-                    card: <EladCard style={{width: '100%'}}/>
+                    card: <EladCard/>
                 },
                 tamir: {
                     worker: 'tamir',
@@ -23,7 +23,7 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                     description: 'Carly is Pact Media\'s Co-Founder and CEO. She has worked in marketing, design and business development in NY and run and directed several successful companies. Over the last 7 years she has invested her efforts in making real, lasting change with some of the world’s top scientific and philanthropic institutions globally.\n' +
                         '\n' +
                         'She has extensive experience in helping clients build internationally renowned projects from the ground up, using design to present complex concepts in dynamic and digestible formats',
-                    card: <TamirCard style={{width: '100%'}}/>
+                    card: <TamirCard/>
                 },
                 steph: {
                     worker: 'steph',
@@ -32,27 +32,25 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                     description: 'Carly is Pact Media\'s Co-Founder and CEO. She has worked in marketing, design and business development in NY and run and directed several successful companies. Over the last 7 years she has invested her efforts in making real, lasting change with some of the world’s top scientific and philanthropic institutions globally.\n' +
                         '\n' +
                         'She has extensive experience in helping clients build internationally renowned projects from the ground up, using design to present complex concepts in dynamic and digestible formats',
-                    card: <StephCard style={{width: '100%'}}/>
+                    card: <StephCard/>
                 },
             }
 
         return (
-            <>
+            <div className={styles.popup} style={{maxWidth: isOpen ? '100%' : '0'}}>
                 {activeWorker &&
-                <div className={styles.popup} style={{maxWidth: isOpen ? '100%' : '0'}}>
-                    <div className={styles.workerWrapper} style={{opacity: isOpen ? '100%' : '0%'}}>
-                        <div className={styles.cardWrapper}>{workers[activeWorker].card}</div>
-                        <div className={styles.divider}/>
-                        <div className={styles.workerDescription}>
-                            <h1>{workers[activeWorker].name}</h1>
-                            <h2>{workers[activeWorker].title}</h2>
-                            <p>{workers[activeWorker].description}</p>
-                        </div>
+                <div className={styles.workerWrapper} style={{opacity: isOpen ? '1' : '0'}}>
+                    <div className={styles.cardWrapper}>{workers[activeWorker].card}</div>
+                    <div className={styles.divider}/>
+                    <div className={styles.workerDescription}>
+                        <div className={styles.name}>{workers[activeWorker].name}</div>
+                        <h2>{workers[activeWorker].title}</h2>
+                        <p>{workers[activeWorker].description}</p>
                     </div>
-                    <button className={styles.buttonX} onClick={() => setIsOpen(false)}>x</button>
                 </div>
                 }
-            </>
+                <button className={styles.buttonX} onClick={() => setIsOpen(false)}>x</button>
+            </div>
         );
     }
 ;
