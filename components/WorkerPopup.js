@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from "../styles/WorkerPopup.module.scss";
 import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
