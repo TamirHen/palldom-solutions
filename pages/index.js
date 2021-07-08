@@ -32,7 +32,7 @@ export default function Home() {
         <div className={styles.container}>
             <Head>
                 <title>Palladom Solutions</title>
-                <meta name="description" content="Making your dream website for you"/>
+                <meta name="description" content="Making your dream come true"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 

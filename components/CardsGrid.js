@@ -21,12 +21,12 @@ const CardsGrid = ({children}) => {
 
         return (
             <div className={styles.cardsGrid} ref={cardsGrid}>
-                <HorizontalScroll
-                    reverseScroll
-                    className={styles.horizontalScroll}
-                >
-                    {children}
-                </HorizontalScroll>
+                {/*<HorizontalScroll*/}
+                {/*    reverseScroll*/}
+                {/*    className={styles.horizontalScroll}*/}
+                {/*>*/}
+                {children}
+                {/*</HorizontalScroll>*/}
             </div>
         );
     }

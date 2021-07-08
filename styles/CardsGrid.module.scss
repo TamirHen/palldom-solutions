@@ -6,6 +6,18 @@
   overflow: auto;
   height: fit-content;
   padding-right: 30px;
+  padding-bottom: 20px;
+
+  &::-webkit-scrollbar {
+    background: transparent;
+    border-radius: 50px;
+    border: 2px solid colors.$clr-background;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: colors.$clr-background;
+    border-radius: 50px;
+  }
 
   .horizontalScroll {
     position: static !important;
@@ -16,11 +28,18 @@
     }
   }
 
-  &::-webkit-scrollbar {
-    width: 0;
-    background: transparent;
-    display: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none
+
+}
+
+@media (max-width: 800px) {
+  .cardsGrid {
+
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+      display: none;
+      -ms-overflow-style: none;
+      scrollbar-width: none
+    }
   }
 }
