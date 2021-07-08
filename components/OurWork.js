@@ -19,8 +19,8 @@ const OurWork = ({sectionRef: ourWorkSection, title, projects}) => {
                 {
                     projects &&
                     Object.keys(projects).map((pname, index) => (
-                        <Link href={'/projects/' + pname}>
-                            <div className={styles.shrink} key={pname}>
+                        <Link href={'/projects/' + pname} key={pname}>
+                            <div className={styles.shrink}>
                                 <div className={styles.cardWrapper}>
                                     <h3 className={styles.ourWorkCardText}>{projects[pname]?.title}</h3>
                                     <div className={styles.cardWork}>
