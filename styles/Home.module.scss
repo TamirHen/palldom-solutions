@@ -667,7 +667,7 @@ $page-padding-left: 17%;
 
     .sectionOurWork {
       padding-top: 20px;
-      height: 500px;
+      height: 460px;
 
       .smallRingWrapper {
         top: -150px;
@@ -698,7 +698,7 @@ $page-padding-left: 17%;
       }
 
       .cardWork {
-        width: 280px;
+        width: 260px;
       }
 
       &:hover {
@@ -779,13 +779,19 @@ $page-padding-left: 17%;
     }
 
     .sectionOurWork {
-      height: 480px;
+      height: 430px;
 
       .smallRingWrapper {
 
         .smallRing {
           height: 250px;
         }
+      }
+    }
+
+    .cardWrapper {
+      .cardWork {
+        width: 240px;
       }
     }
   }
