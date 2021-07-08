@@ -52,6 +52,7 @@ $page-padding-left: 17%;
     left: 5px;
     bottom: 0;
     color: white;
+    z-index: 1;
   }
 
   .avatarCardText {
@@ -74,6 +75,14 @@ $page-padding-left: 17%;
     width: 438px;
     height: auto;
     border-radius: 3px;
+
+    //.opacity {
+    //  background-color: black;
+    //  position: absolute;
+    //  left: 0;
+    //  right: 0;
+    //}
+
   }
 
   &:hover {
@@ -88,13 +97,14 @@ $page-padding-left: 17%;
     }
 
     .ourWorkCardText {
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
 }
 
 .shrink {
   transition: transform 200ms ease;
+  position: relative;
 
   &:hover {
     transform: scale(.9);

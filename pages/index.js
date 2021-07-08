@@ -8,8 +8,9 @@ import CardsGrid from "../components/CardsGrid";
 import EladCard from "../assets/elad-card.svg";
 import TamirCard from "../assets/tamir-card.svg";
 import StephCard from "../assets/steph-card.svg";
+import TuliCard from "../assets/tuli-card.svg";
+import AlexCard from "../assets/alex-card.svg";
 import CardArrowIcon from "../assets/card-arrow.svg";
-import WorkExample from "../assets/work1.svg";
 import Fade from 'react-reveal/Fade';
 import OurWork from "../components/OurWork";
 
@@ -111,6 +112,20 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
                             <CardArrowIcon className={styles.arrow}/>
                             <h2 className={styles.avatarCardText}>STEPH</h2>
                             <StephCard className={styles.card}/>
+                        </div>
+                    </div>
+                    <div className={styles.shrink}>
+                        <div className={styles.cardWrapper} onClick={() => workerPressedHandler('tuli')}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>TULI</h2>
+                            <TuliCard className={styles.card}/>
+                        </div>
+                    </div>
+                    <div className={styles.shrink}>
+                        <div className={styles.cardWrapper} onClick={() => workerPressedHandler('alex')}>
+                            <CardArrowIcon className={styles.arrow}/>
+                            <h2 className={styles.avatarCardText}>ALEX</h2>
+                            <AlexCard className={styles.card}/>
                         </div>
                     </div>
                 </CardsGrid>

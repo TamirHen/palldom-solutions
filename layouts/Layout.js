@@ -3,10 +3,18 @@ import styles from "../styles/Layout.module.scss";
 import Head from "next/head";
 import Menus from "../components/Menus";
 import Footer from "../components/Footer";
+
+import playgroundPhotoGrid from "../assets/projects/playground-grid.png";
 import playgroundPhotoMain from "../assets/projects/playground-main.png";
 import playgroundPhotoView from "../assets/projects/playground-view.png";
 import playgroundPhoto1 from "../assets/projects/playground-1.png";
 import playgroundPhoto2 from "../assets/projects/playground-2.png";
+
+import irrigationPhotoGrid from "../assets/projects/irrigation-view.png";
+import irrigationPhotoMain from "../assets/projects/irrigation-main.png";
+import irrigationPhotoView from "../assets/projects/irrigation-view.png";
+import irrigationPhoto1 from "../assets/projects/irrigation-1.png";
+import irrigationPhoto2 from "../assets/projects/irrigation-2.png";
 
 const Layout = ({Component, pageProps}) => {
     const aboutSection = useRef();
@@ -17,7 +25,8 @@ const Layout = ({Component, pageProps}) => {
 
     const projects = {
         playground: {
-            title: ['PlayGround', 'Productions', 'Vancouver,BC'],
+            photoGrid: playgroundPhotoGrid,
+            title: ['PLAYGROUND ', 'PRODUCTIONS\n', 'VANCOUVER, BC'],
             photoMain: playgroundPhotoMain,
             text1: 'Palladom solutions helped The PlayGround group tell the story of a new way to socialize in post covid restrictions Vancouver',
             photoView: playgroundPhotoView,
@@ -27,6 +36,18 @@ const Layout = ({Component, pageProps}) => {
             photo1: playgroundPhoto1,
             photo2: playgroundPhoto2,
             text3: 'This project is led by the University of Southampton , the Marine Biological Association and the Research Centre in Biodiversity and Genetic Resources. The GSMP Database holds over 2,000 individual satellite tracks of large pelagic sharks from 23 species spanning over 280,000 track days.'
+        },
+        irrigation: {
+            photoGrid: irrigationPhotoGrid,
+            title: ['SMART ', 'IRRIGATION\n', 'SYSTEM'],
+            photoMain: irrigationPhotoMain,
+            text1: 'We worked with Tamir Hen in order to create an interface illustrating the potential of automatic irrigation systems',
+            photoView: irrigationPhotoView,
+            text2: 'This system is a tool for controlling your irrigation system remotely. With "Smart Irrigation System" you can start or stop the irrigation, set automation for your irrigation times, and see the watering status at all times, from anywhere.',
+            photo1: irrigationPhoto1,
+            photo2: irrigationPhoto2,
+            text3: 'This project is an open source and availabel for plants every where, \n' +
+                'That show cases our abilety of integrating a sortment of technolegies in too a user freindly platform'
         }
     }
 
