@@ -58,7 +58,7 @@ export default function Home() {
                         <button onClick={() => ourWorkSection.current.scrollIntoView()}>OUR WORK</button>
                         <button onClick={() => contactSection.current.scrollIntoView()}>CONTACT US</button>
                     </div>
-                    <h2 className={styles.title}>PALLADOM 1</h2>
+                    <h2 className={styles.title}>PALLADOM</h2>
                     <h3>SOLUTIONS</h3>
 
                     <h1>
