@@ -1,0 +1,285 @@
+@use "colors.module";
+
+$page-padding-left: 17%;
+
+.sectionOurWork {
+  background-color: colors.$clr-red;
+  position: relative;
+  left: 0;
+  right: 0;
+  padding: 50px 5% 100px $page-padding-left;
+  width: 100vw;
+  height: 840px;
+
+  .smallRingWrapper {
+    z-index: 2;
+    position: absolute;
+    right: -100px;
+    top: -200px;
+
+    .smallRing {
+      height: 400px;
+      width: auto;
+      animation: 42s linear infinite;
+      animation-name: rotation;
+    }
+  }
+
+  h1 {
+    color: white;
+  }
+}
+
+
+.cardWrapper {
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 500ms ease !important;
+  overflow: hidden;
+
+  .arrow {
+    position: absolute;
+    width: 51px;
+    height: auto;
+    top: 5px;
+    right: 5px;
+    transition: transform 150ms ease-out;
+  }
+
+  h2, h3 {
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    color: white;
+  }
+
+  .avatarCardText {
+    transition: transform 200ms ease-out;
+  }
+
+  .ourWorkCardText {
+    transition: transform 200ms ease-out;
+    bottom: 20px;
+    left: 40px;
+  }
+
+  .card {
+    width: 309px;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  .cardWork {
+    width: 438px;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  &:hover {
+    transform: scale(.9);
+
+    .arrow {
+      transform: translate(50px, -50px);
+    }
+
+    .avatarCardText {
+      transform: translate(160px, -20px) scale(1.3);
+    }
+
+    .ourWorkCardText {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.shrink {
+  transition: transform 200ms ease;
+
+  &:hover {
+    transform: scale(.9);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@media (max-width: 1400px) {
+
+  .sectionOurWork {
+
+    .smallRingWrapper {
+      right: -150px;
+    }
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+
+
+  .sectionOurWork {
+    .smallRingWrapper {
+
+      .smallRing {
+        height: 320px;
+      }
+    }
+  }
+
+  .cardWrapper {
+
+    .card {
+      width: 280px;
+    }
+
+    .cardWork {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .sectionOurWork {
+    height: 700px;
+
+    .smallRingWrapper {
+      top: -150px;
+      right: -100px;
+
+      .smallRing {
+        height: 280px;
+      }
+    }
+  }
+
+  .cardWrapper {
+
+    .card {
+      width: 250px;
+    }
+
+    h2, h3 {
+      bottom: 10px;
+      font-size: 26px;
+    }
+
+    .cardWork {
+      width: 350px;
+    }
+
+    &:hover {
+
+      .avatarCardText {
+        transform: translate(120px, -20px) scale(1.3);
+      }
+
+      .ourWorkCardText {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .sectionOurWork {
+    padding-top: 30px;
+    height: 620px;
+
+    .smallRingWrapper {
+      top: -120px;
+
+      .smallRing {
+        height: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+
+  .sectionOurWork {
+    padding-top: 20px;
+    height: 460px;
+
+    .smallRingWrapper {
+      top: -100px;
+
+      .smallRing {
+        height: 200px;
+      }
+    }
+  }
+
+  .cardWrapper {
+
+    .arrow {
+      height: 45px;
+    }
+
+    .card {
+      width: 200px;
+    }
+
+    h2 {
+      bottom: 10px;
+      font-size: 22px !important;
+    }
+
+    h3 {
+      font-size: 18px !important;
+    }
+
+    .cardWork {
+      width: 260px;
+    }
+
+    &:hover {
+
+      .arrow {
+        transform: translate(50px, -50px);
+      }
+
+      .avatarCardText {
+        transform: translate(100px, -20px) scale(1.2);
+      }
+
+      .ourWorkCardText {
+        transform: scale(1.2);
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 400px) {
+
+  .sectionOurWork {
+    height: 430px;
+
+    .smallRingWrapper {
+
+      .smallRing {
+        height: 180px;
+      }
+    }
+  }
+
+  .cardWrapper {
+    .cardWork {
+      width: 240px;
+    }
+  }
+}
