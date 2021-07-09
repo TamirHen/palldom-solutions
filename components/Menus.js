@@ -67,13 +67,13 @@ const Menus = ({
                 <button className={styles.buttonX} onClick={() => setIsMobileMenuOpen(false)}>x</button>
                 <div className={styles.buttonsWrapper}>
                     <button onClick={() => onButtonClickHandler(aboutSection)}
-                            style={{opacity: isMobileMenuOpen ? '100%' : '0'}}>ABOUT
+                            style={{opacity: isMobileMenuOpen ? '1' : '0'}}>ABOUT
                     </button>
                     <button onClick={() => onButtonClickHandler(ourWorkSection)}
-                            style={{opacity: isMobileMenuOpen ? '100%' : '0'}}>OUR WORK
+                            style={{opacity: isMobileMenuOpen ? '1' : '0'}}>OUR WORK
                     </button>
                     <button onClick={() => onButtonClickHandler(contactSection)}
-                            style={{opacity: isMobileMenuOpen ? '100%' : '0'}}>CONTACT US
+                            style={{opacity: isMobileMenuOpen ? '1' : '0'}}>CONTACT US
                     </button>
                 </div>
             </nav>
