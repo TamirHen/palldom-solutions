@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useRouter} from "next/router";
 import styles from '../../styles/Project.module.scss';
 import Image from 'next/image'
@@ -13,6 +13,9 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
         const router = useRouter();
         const {pname} = router.query;
 
+        useEffect(() => {
+            window.scroll(0, 0);
+        }, [])
         return (
             <>
                 {projects[pname] &&
