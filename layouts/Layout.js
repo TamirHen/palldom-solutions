@@ -16,6 +16,12 @@ import irrigationPhotoView from "../assets/projects/irrigation-view.png";
 import irrigationPhoto1 from "../assets/projects/irrigation-1.png";
 import irrigationPhoto2 from "../assets/projects/irrigation-2.png";
 
+import portfolioPhotoGrid from "../assets/projects/portfolio-grid.png";
+import portfolioPhotoMain from "../assets/projects/portfolio-main.png";
+import portfolioPhotoView from "../assets/projects/portfolio-view.png";
+import portfolioPhoto1 from "../assets/projects/portfolio-1.png";
+import portfolioPhoto2 from "../assets/projects/portfolio-2.png";
+
 const Layout = ({Component, pageProps}) => {
     const aboutSection = useRef();
     const ourWorkSection = useRef();
@@ -26,7 +32,7 @@ const Layout = ({Component, pageProps}) => {
     const projects = {
         playground: {
             photoGrid: playgroundPhotoGrid,
-            title: ['PLAYGROUND ', 'PRODUCTIONS\n', 'VANCOUVER, BC'],
+            title: ['PLAYGROUND ', 'PRODUCTIONS\n', 'VANCOUVER'],
             photoMain: playgroundPhotoMain,
             text1: 'Palladom solutions helped The PlayGround group tell the story of a new way to socialize in post covid restrictions Vancouver',
             photoView: playgroundPhotoView,
@@ -46,8 +52,19 @@ const Layout = ({Component, pageProps}) => {
             text2: 'This system is a tool for controlling your irrigation system remotely. With "Smart Irrigation System" you can start or stop the irrigation, set automation for your irrigation times, and see the watering status at all times, from anywhere.',
             photo1: irrigationPhoto1,
             photo2: irrigationPhoto2,
-            text3: 'This project is an open source and availabel for plants every where, \n' +
-                'That show cases our abilety of integrating a sortment of technolegies in too a user freindly platform'
+            text3: 'This project is an open source and available for plants every where, \n' +
+                'That show cases our ability of integrating a assortment of technologies in too a user friendly platform'
+        },
+        portfolio: {
+            photoGrid: portfolioPhotoGrid,
+            title: ['TALIA ', 'BREUER\n', 'PORTFOLIO'],
+            photoMain: portfolioPhotoMain,
+            text1: 'We worked with portfolio in order to create a practical portfolio to show case her work',
+            photoView: portfolioPhotoView,
+            text2: 'This system layout is clean and simple in order to gather as much of the viewer attention on the work of Talia Breuer',
+            photo1: portfolioPhoto1,
+            photo2: portfolioPhoto2,
+            text3: 'This project is a fully responsive website showcasing alias talent in addition on having a continuity interface that will let Talia add additional content when ever she would like to do so'
         }
     }
 

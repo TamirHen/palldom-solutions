@@ -92,7 +92,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
                         {`SKILLS`}
                     </Fade>
                 </h1>
-                <CardsGrid>
+                <CardsGrid scrollColor='red'>
                     <div className={styles.shrink}>
                         <div className={styles.cardWrapper} onClick={() => workerPressedHandler('elad')}>
                             <CardArrowIcon className={styles.arrow}/>

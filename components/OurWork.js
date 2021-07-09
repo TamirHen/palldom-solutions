@@ -5,6 +5,7 @@ import TextCycleBlackIcon from "../assets/text-cycle-service.svg";
 import Fade from "react-reveal/Fade";
 import CardsGrid from "./CardsGrid";
 import styles from '../styles/OurWork.module.scss';
+import Shade from "./Shade";
 
 const OurWork = ({sectionRef: ourWorkSection, title, projects}) => {
     return (
@@ -15,7 +16,7 @@ const OurWork = ({sectionRef: ourWorkSection, title, projects}) => {
                     {title}
                 </Fade>
             </h1>
-            <CardsGrid>
+            <CardsGrid scrollColor='grey'>
                 {
                     projects &&
                     Object.keys(projects).map((pname, index) => (
@@ -24,8 +25,10 @@ const OurWork = ({sectionRef: ourWorkSection, title, projects}) => {
                                 <div className={styles.cardWrapper}>
                                     <h3 className={styles.ourWorkCardText}>{projects[pname]?.title}</h3>
                                     <div className={styles.cardWork}>
-                                        {/*<div className={styles.opacity}/>*/}
-                                        <Image src={projects[pname].photoGrid} alt={pname}/>
+                                        <Shade>
+                                            {/*<div className={styles.opacity}/>*/}
+                                            <Image src={projects[pname].photoGrid} alt={pname}/>
+                                        </Shade>
                                     </div>
                                 </div>
                             </div>

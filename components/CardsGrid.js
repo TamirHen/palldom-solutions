@@ -4,7 +4,7 @@ import HorizontalScroll from "react-scroll-horizontal";
 import Fade from "react-reveal/Fade";
 
 
-const CardsGrid = ({children}) => {
+const CardsGrid = ({children, scrollColor}) => {
         const cardsGrid = useRef();
 
         // const onWheel = e => {
@@ -20,7 +20,8 @@ const CardsGrid = ({children}) => {
         // };
 
         return (
-            <div className={styles.cardsGrid} ref={cardsGrid}>
+            <div className={`${styles.cardsGrid} ${scrollColor === 'red' ? styles.redScroll : styles.greyScroll}`}
+                 ref={cardsGrid}>
                 {/*<HorizontalScroll*/}
                 {/*    reverseScroll*/}
                 {/*    className={styles.horizontalScroll}*/}
