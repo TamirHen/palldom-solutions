@@ -13,9 +13,17 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
         const router = useRouter();
         const {pname} = router.query;
 
-        useEffect(() => {
-            window.scroll(0, 0);
-        }, [])
+        const onButtonClickHandler = async (section) => {
+            let location;
+            if (typeof window !== 'undefined') {
+                location = window.location.pathname;
+            }
+            if (location.includes('projects') && section !== contactSection) {
+                await router.push('/');
+            }
+            section.current.scrollIntoView();
+        }
+
         return (
             <>
                 {projects[pname] &&
@@ -40,9 +48,9 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
                     </div>
                     <section className={styles.sectionHome}>
                         <div className={styles.linksWrapper}>
-                            <button onClick={() => aboutSection?.current.scrollIntoView()}>ABOUT</button>
-                            <button onClick={() => ourWorkSection?.current.scrollIntoView()}>OUR WORK</button>
-                            <button onClick={() => contactSection?.current.scrollIntoView()}>CONTACT US</button>
+                            <button onClick={() => onButtonClickHandler(aboutSection)}>ABOUT</button>
+                            <button onClick={() => onButtonClickHandler(ourWorkSection)}>OUR WORK</button>
+                            <button onClick={() => onButtonClickHandler(contactSection)}>CONTACT US</button>
                         </div>
                         <h2 className={styles.title}>PALLADOM</h2>
                         <h3>SOLUTIONS</h3>
