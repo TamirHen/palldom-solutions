@@ -10,7 +10,7 @@ import playgroundPhotoView from "../assets/projects/playground-view.png";
 import playgroundPhoto1 from "../assets/projects/playground-1.png";
 import playgroundPhoto2 from "../assets/projects/playground-2.png";
 
-import irrigationPhotoGrid from "../assets/projects/irrigation-view.png";
+import irrigationPhotoGrid from "../assets/projects/irrigation-grid.png";
 import irrigationPhotoMain from "../assets/projects/irrigation-main.png";
 import irrigationPhotoView from "../assets/projects/irrigation-view.png";
 import irrigationPhoto1 from "../assets/projects/irrigation-1.png";
@@ -57,14 +57,14 @@ const Layout = ({Component, pageProps}) => {
         },
         portfolio: {
             photoGrid: portfolioPhotoGrid,
-            title: ['TALIA ', 'BREUER\n', 'PORTFOLIO'],
+            title: ['DESIGNER ', 'PORTFOLIO'],
             photoMain: portfolioPhotoMain,
-            text1: 'We worked with portfolio in order to create a practical portfolio to show case her work',
+            text1: 'We worked with portfolio in order to create a practical portfolio to show case his work',
             photoView: portfolioPhotoView,
-            text2: 'This system layout is clean and simple in order to gather as much of the viewer attention on the work of Talia Breuer',
+            text2: 'This system layout is clean and simple in order to gather as much of the viewer attention on the work of the designer',
             photo1: portfolioPhoto1,
             photo2: portfolioPhoto2,
-            text3: 'This project is a fully responsive website showcasing alias talent in addition on having a continuity interface that will let Talia add additional content when ever she would like to do so'
+            text3: 'This project is a fully responsive website showcasing alias talent in addition on having a continuity interface that will let the designer add additional content when ever he would like to do so'
         }
     }
 

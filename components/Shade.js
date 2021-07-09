@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from "../styles/Shade.module.scss";
 
-const Shade = ({children}) => {
+const Shade = ({children, disableOnHover}) => {
     return (
         <div className={styles.shadeWrapper}>
-            <div className={styles.shade}/>
+            <div className={disableOnHover ? styles.shadeWithHover : styles.shade}/>
             {children}
         </div>
     );

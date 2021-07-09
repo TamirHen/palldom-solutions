@@ -8,6 +8,7 @@ import InstagramIcon from "../assets/instagram.svg";
 import TwitterIcon from "../assets/twitter.svg";
 import SideMenuIcon from "../assets/sideMenuIcon.svg";
 import WorkerPopup from "./WorkerPopup";
+import {useRouter} from "next/router";
 
 const Menus = ({
                    aboutSection,
@@ -22,8 +23,16 @@ const Menus = ({
     const linkedinUrl = "https://www.linkedin.com/in/palladom-solutions-b20a47216/";
     const instagramUrl = "/";
     const twitterUrl = "https://twitter.com/PalladomS";
+    const router = useRouter();
 
-    const onButtonClickHandler = (section) => {
+    const onButtonClickHandler = async (section) => {
+        let location;
+        if (typeof window !== 'undefined') {
+            location = window.location.pathname;
+        }
+        if (location.includes('projects') && section !== contactSection) {
+            await router.push('/');
+        }
         setIsMobileMenuOpen(false);
         section.current.scrollIntoView();
     }

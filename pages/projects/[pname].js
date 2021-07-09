@@ -36,11 +36,11 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
                         </p>
                     </div>
                     <section className={styles.sectionHome}>
-                        {/*<div className={styles.linksWrapper}>*/}
-                        {/*    <button onClick={() => aboutSection?.current.scrollIntoView()}>ABOUT</button>*/}
-                        {/*    <button onClick={() => ourWorkSection?.current.scrollIntoView()}>OUR WORK</button>*/}
-                        {/*    <button onClick={() => contactSection?.current.scrollIntoView()}>CONTACT US</button>*/}
-                        {/*</div>*/}
+                        <div className={styles.linksWrapper}>
+                            <button onClick={() => aboutSection?.current.scrollIntoView()}>ABOUT</button>
+                            <button onClick={() => ourWorkSection?.current.scrollIntoView()}>OUR WORK</button>
+                            <button onClick={() => contactSection?.current.scrollIntoView()}>CONTACT US</button>
+                        </div>
                         <h2 className={styles.title}>PALLADOM</h2>
                         <h3>SOLUTIONS</h3>
 
@@ -53,7 +53,7 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
 
                     <section className={styles.sectionAbout}>
                         <Fade bottom>
-                            <Shade>
+                            <Shade disableOnHover>
                                 <Image src={projects[pname].photoView} alt={projects[pname].text1}/>
                             </Shade>
                         </Fade>
@@ -64,12 +64,12 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
                         </p>
                         <div className={styles.imagesWrapper}>
                             <div className={styles.photo1}>
-                                <Shade>
+                                <Shade disableOnHover>
                                     <Image src={projects[pname].photo1} alt={projects[pname] + '-photo-1'}/>
                                 </Shade>
                             </div>
                             <div className={styles.photo2}>
-                                <Shade>
+                                <Shade disableOnHover>
                                     <Image src={projects[pname].photo2} alt={projects[pname] + '-photo-2'}/>
                                 </Shade>
                             </div>
