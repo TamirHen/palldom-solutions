@@ -64,7 +64,6 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                 <button className={styles.buttonX} onClick={() => setIsOpen(false)}>x</button>
             </div>
         );
-    }
-;
+    };
 
 export default WorkerPopup;

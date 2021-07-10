@@ -9,6 +9,7 @@ import TwitterIcon from "../assets/twitter.svg";
 import SendUsMessageIcon from "../assets/sendUsMessageIcon.svg";
 import WorkerPopup from "./WorkerPopup";
 import {useRouter} from "next/router";
+import MessageUsPopup from "./MessageUsPopup";
 
 const Menus = ({
                    aboutSection,
@@ -20,10 +21,18 @@ const Menus = ({
                    setIsWorkerOpen
                }) => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isMessageUsOpen, setIsMessageUsOpen] = useState(false);
     const linkedinUrl = "https://www.linkedin.com/in/palladom-solutions-b20a47216/";
     const instagramUrl = "/";
     const twitterUrl = "https://twitter.com/PalladomS";
     const router = useRouter();
+
+    const onMessageUsClickHandler = () => {
+        setIsMobileMenuOpen(false);
+        setIsWorkerOpen(false);
+
+        setIsMessageUsOpen(!isMessageUsOpen);
+    }
 
     const onButtonClickHandler = async (section) => {
         let location;
@@ -58,11 +67,17 @@ const Menus = ({
                                 className={styles.icon}/></a>
                         </Link>
                     </div>
-                    <button className={styles.messageUsWrapper}><SendUsMessageIcon className={`${styles.messageUsIcon} ${styles.icon}`}/></button>
+                    <button className={styles.messageUsWrapper}>
+                        <SendUsMessageIcon className={`${styles.messageUsIcon} ${styles.icon}`}
+                                           onClick={onMessageUsClickHandler}/>
+                        {/*{'Message'}<br/>{'Us'}*/}
+                    </button>
                 </nav>
             </div>
             <WorkerPopup activeWorker={activeWorker} setActiveWorker={setActiveWorker} isOpen={isWorkerOpen}
                          setIsOpen={setIsWorkerOpen}/>
+            <MessageUsPopup isOpen={isMessageUsOpen}
+                            setIsOpen={setIsMessageUsOpen}/>
             <nav className={styles.mobileNav} style={{maxWidth: isMobileMenuOpen ? '100%' : '0'}}>
                 <button className={styles.buttonX} onClick={() => setIsMobileMenuOpen(false)}>x</button>
                 <div className={styles.buttonsWrapper}>
