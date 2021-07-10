@@ -29,7 +29,7 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
             {projects[pname] &&
             <div className={styles.main}>
                 <Head>
-                    <title>{projects[pname].title}</title>
+                    <title>Palladom Solutions</title>
                     <meta name="description" content={projects[pname].text1}/>
                 </Head>
 
@@ -87,7 +87,7 @@ const Project = ({aboutSection, ourWorkSection, contactSection, projects}) => {
                     </div>
                     <p>{projects[pname].text3}</p>
                 </section>
-                <OurWork title={'VIEW NEXT'} projects={projects}/>
+                <OurWork title={'VIEW MORE'} projects={projects}/>
             </div>
             }
         </>

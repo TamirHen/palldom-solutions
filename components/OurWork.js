@@ -26,7 +26,6 @@ const OurWork = ({sectionRef: ourWorkSection, title, projects}) => {
                                     <h3 className={styles.ourWorkCardText}>{projects[pname]?.title}</h3>
                                     <div className={styles.cardWork}>
                                         <Shade>
-                                            {/*<div className={styles.opacity}/>*/}
                                             <Image src={projects[pname].photoGrid} alt={pname}/>
                                         </Shade>
                                     </div>

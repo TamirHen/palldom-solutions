@@ -47,11 +47,22 @@ const Layout = ({Component, pageProps}) => {
             photo2: playgroundPhoto2,
             text3: 'This project was led by the Design and Illustration team at Palladom and worked in collaboration with The PlayGround Group. The Playground Group’s events have had over 600 individuals attend, and their audience continues to grow through the implementation of our effective marketing and branding strategy.'
         },
+        dahlak: {
+            photoGrid: dahlakPhotoGrid,
+            title: ['DAHLAK\n', 'RESTAURANT'],
+            photoMain: dahlakPhotoMain,
+            text1: 'We worked with Dahlak Restaurant LTD. with a goal of increasing their digital outreach.',
+            photoView: dahlakPhotoView,
+            text2: 'Implementing Palladom’s new digital infrastructure allowed Dahlak Restaurant LTD to brand itself as a modern East African restaurant and maintain direct communication [How does it maintain direct communication?] with their clients while fostering their brand identity.',
+            photo1: dahlakPhoto1,
+            photo2: dahlakPhoto2,
+            text3: "Palladom successfully increased Dahlak Restaurant’s website views by 65% monthly and improved their rating on Google from a 4.2 to a 4.6 in 4 months."
+        },
         irrigation: {
             photoGrid: irrigationPhotoGrid,
             title: ['SMART ', 'IRRIGATION\n', 'SYSTEM'],
             photoMain: irrigationPhotoMain,
-            text1: 'We worked with Tamir Hen in order to create an interface illustrating the potential of automated irrigation systems.',
+            text1: 'We worked with the customer in order to create an interface illustrating the potential of automated irrigation systems.',
             photoView: irrigationPhotoView,
             text2: 'This system is a tool for controlling your irrigation system remotely. With "Smart Irrigation System" you can start or stop the irrigation, set automated irrigation times, and see the watering status at all times, from anywhere.',
             photo1: irrigationPhoto1,
@@ -68,17 +79,6 @@ const Layout = ({Component, pageProps}) => {
             photo1: portfolioPhoto1,
             photo2: portfolioPhoto2,
             text3: "This fully responsive website showcases the designer's talent while having a convenient interface that allows him to update and add his content whenever he would like to do so."
-        },
-        dahlak: {
-            photoGrid: dahlakPhotoGrid,
-            title: ['DAHLAK\n', 'RESTAURANT'],
-            photoMain: dahlakPhotoMain,
-            text1: 'We worked with Dahlak Restaurant LTD. with a goal of increasing their digital outreach.',
-            photoView: dahlakPhotoView,
-            text2: 'Implementing Palladom’s new digital infrastructure allowed Dahlak Restaurant LTD to brand itself as a modern East African restaurant and maintain direct communication [How does it maintain direct communication?] with their clients while fostering their brand identity.',
-            photo1: dahlakPhoto1,
-            photo2: dahlakPhoto2,
-            text3: "Palladom successfully increased Dahlak Restaurant’s website views by 65% monthly and improved their rating on Google from a 4.2 to a 4.6 in 4 months."
         }
     }
 

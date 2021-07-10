@@ -6,7 +6,7 @@ import Hamburger from "../assets/hamburger.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
 import InstagramIcon from "../assets/instagram.svg";
 import TwitterIcon from "../assets/twitter.svg";
-import SideMenuIcon from "../assets/sideMenuIcon.svg";
+import SendUsMessageIcon from "../assets/sendUsMessageIcon.svg";
 import WorkerPopup from "./WorkerPopup";
 import {useRouter} from "next/router";
 
@@ -58,7 +58,7 @@ const Menus = ({
                                 className={styles.icon}/></a>
                         </Link>
                     </div>
-                    <SideMenuIcon className={styles.sideMenuIcon}/>
+                    <button className={styles.messageUsWrapper}><SendUsMessageIcon className={`${styles.messageUsIcon} ${styles.icon}`}/></button>
                 </nav>
             </div>
             <WorkerPopup activeWorker={activeWorker} setActiveWorker={setActiveWorker} isOpen={isWorkerOpen}
