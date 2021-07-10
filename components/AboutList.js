@@ -11,7 +11,7 @@ export default function AboutList() {
         },
         {
             header: 'Branding',
-            text: 'An object (service? product?) is just an object, but with the right skills, strategy, and plan, we can develop a deeper connection to between your (service, product) and your clients.',
+            text: 'A brand can be just a brand, or worse it can be bland. But with the right skills, strategy, and plan, we can develop a deeper relationship between what you offer and how your clients connect to it.',
             isOpen: false
         },
         {
@@ -21,7 +21,7 @@ export default function AboutList() {
         },
         {
             header: 'Search Engine Optimization',
-            text: 'With millions of search options, we can make it much easier for your clients to find the needle in the haystack. Using search engine optimization, our team can lead your clients to your site in no time.',
+            text: 'With millions of search options, we can make it much easier for your clients to find the needle in the haystack. Using search engine optimization, our team can lead potential clients to your site in no time.',
             isOpen: false
         },
         {
@@ -31,7 +31,7 @@ export default function AboutList() {
         },
         {
             header: 'Marketing Strategies',
-            text: 'For every pot, there is a lid— just like how every service has its targeted audience. We are here to help you understand the best audience for your product and the most effective way to— not only reach that market, but catch and hold their attention.',
+            text: 'For every pot, there is a lid— just like how every service has its targeted audience. We are here to help you understand the best audience for your product and the most effective way to not only reach that market but catch and hold their attention.',
             isOpen: false
         },
         {

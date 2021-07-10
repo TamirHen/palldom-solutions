@@ -29,10 +29,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
                 <RingIcon className={styles.ring}/>
                 <p>
                     <Fade bottom>
-                        {`Palldom is a full service design agency that drives positive change around social, economic,
-                                and environmental issues.`}
-                        {`Through creative communication and strategy, we build
-                                experiences that inspire dialogue and action.`}
+                        {`Palladom Solutions is a full-service digital design and development agency that drives positive change around social, economic, and environmental issues. Through creative communication strategies, we build experiences that inspire dialogue and action.`}
                     </Fade>
                 </p>
             </div>
@@ -63,10 +60,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
                     </h1>
                     <h2>
                         <Fade bottom>
-                            {`We help people, business, organizations and institutes speak
-                                directly to their audience with carefully crafted communication.
-                                Through close collaboration with our clients we tell
-                                stories through the most effective means of communication.`}
+                            {`We help people, businesses, organizations, and institutes speak directly to their audiences with carefully crafted digital communication. Through close collaboration with our clients, we listen, understand, and tell the stories that reside at the heart of what our clients can offer.`}
                         </Fade>
                     </h2>
                     <AboutList/>
@@ -78,9 +72,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
                 <RingIcon className={styles.ring}/>
                 <p>
                     <Fade bottom>
-                        We are designers, researchers, artists, writers, and developers that communicate in
-                        imaginative
-                        and impactful ways to create meaningful social and environmental change.
+                        {`We are a collective of freelance designers, artists, writers and developers that work in imaginative and innovative ways to build meaningful digital impact.`}
                     </Fade>
                 </p>
             </div>
