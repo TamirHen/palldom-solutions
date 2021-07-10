@@ -28,7 +28,7 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                 steph: {
                     worker: 'steph',
                     name: 'STEPH',
-                    title: 'HEAD OF COMMUNICATION & CONTENT WRITER',
+                    title: 'HEAD OF COMMUNICATION & CONTENT',
                     description: 'Steph is Palladom Solutions’s head communications and content writer. As a freelance artist and writer, she has spent the last 6 years working with various businesses to develop their brand identities through visual and written storytelling. Using her background in art history and critical theory, her strengths lie in collaborating with businesses to understand, transform, and utilize the hidden meanings behind their brand representation. Steph is enlivened by knowledge, driven by creativity, and passionate about working closely with clients to get to the heart of why they began their business journeys.',
                     card: <StephCard/>
                 },
@@ -42,7 +42,7 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                 tuli: {
                     worker: 'tuli',
                     name: 'TALIA',
-                    title: 'FOUNDER',
+                    title: 'DESIGNER',
                     description: '',
                     card: <TuliCard/>
                 },
