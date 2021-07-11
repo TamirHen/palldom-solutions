@@ -53,7 +53,7 @@ const Layout = ({Component, pageProps}) => {
             photoMain: dahlakPhotoMain,
             text1: 'We worked with Dahlak Restaurant LTD. with a goal of increasing their digital outreach.',
             photoView: dahlakPhotoView,
-            text2: 'Implementing Palladom’s new digital infrastructure allowed Dahlak Restaurant LTD to brand itself as a modern East African restaurant and maintain direct communication [How does it maintain direct communication?] with their clients while fostering their brand identity.',
+            text2: 'Implementing Palladom’s new digital infrastructure allowed Dahlak Restaurant LTD to brand itself as a modern East African restaurant and maintain direct communication with their clients while fostering their brand identity.',
             photo1: dahlakPhoto1,
             photo2: dahlakPhoto2,
             text3: "Palladom successfully increased Dahlak Restaurant’s website views by 65% monthly and improved their rating on Google from a 4.2 to a 4.6 in 4 months."
