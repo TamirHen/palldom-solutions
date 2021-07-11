@@ -20,7 +20,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
         <div className={styles.main}>
             <Head>
                 <title>Palladom Solutions</title>
-                <meta name="description" content="Making your dream come true"/>
+                <meta name="description" content="Palladom Solutions is a full-service digital design and development agency that drives positive change around social, economic, and environmental issues."/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
