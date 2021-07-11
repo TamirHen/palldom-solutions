@@ -1,15 +1,15 @@
 import sgMail from '@sendgrid/mail';
 
-sgMail.setApiKey('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')
+sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async function sendEmail(req, res) {
     const {body} = req.body;
     const msg = {
-        to: 'info@palladomsolutions.com',
-        from: 'info@palladomsolutions.com',
-        subject: 'Customer Request From Website',
-        text: body,
-        html: body
+            to: 'info@palladomsolutions.com',
+            from: 'info@palladomsolutions.com',
+            subject: 'Customer Request From Website',
+            text: body,
+            html: body
     }
     try {
         await sgMail.send(msg);
