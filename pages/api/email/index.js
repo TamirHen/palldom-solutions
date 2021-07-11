@@ -13,9 +13,9 @@ export default async function sendEmail(req, res) {
     }
     try {
         await sgMail.send(msg);
-        res.status(200).json();
+        res.status(200).send({message: "Success"});
     } catch (err) {
         console.error(err);
-        res.status(400).json();
+        res.status(400).send(err);
     }
 }

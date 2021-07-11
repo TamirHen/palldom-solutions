@@ -30,7 +30,7 @@ const MessageUsPopup = ({isOpen, setIsOpen}) => {
             Thank you,<br/>
             The Palladom Solutions Team`
         try {
-            const response = await axios.post('/api/email', {body});
+            const response = await axios.post('pages/api/email', {body});
             setForm({
                 name: "",
                 email: "",
