@@ -3,6 +3,7 @@ import sgMail from '@sendgrid/mail';
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async function sendEmail(req, res) {
+    console.log("sendgrid_api_key: "+process.env.SENDGRID_API_KEY);
     const {body} = req.body;
     const msg = {
             to: 'info@palladomsolutions.com',
