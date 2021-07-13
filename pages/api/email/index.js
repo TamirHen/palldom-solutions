@@ -1,8 +1,16 @@
 import sgMail from '@sendgrid/mail';
+import NextCors from 'nextjs-cors';
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY)
 
 export default async function sendEmail(req, res) {
+    await NextCors(req, res, {
+        // Options
+        methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
+        origin: '*',
+        optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
+    });
+
     const {body, sendTo} = req.body;
     const msg = {
         to: sendTo || 'info@palladomsolutions.com',
