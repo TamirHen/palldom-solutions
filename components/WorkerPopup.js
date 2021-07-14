@@ -22,7 +22,7 @@ const WorkerPopup = ({isOpen, setIsOpen, activeWorker, setActiveWorker}) => {
                     worker: 'tamir',
                     name: 'TAMIR HEN',
                     title: 'FOUNDER',
-                    description: 'Tamir is Palladom Solutions’s founder and lead developer. He feels most at home while wrestling with any sort of technological problem, from coding a simple landing page to creating advanced, customized data-base solutions. Tamir’s back-end development provides high-level technological products, while integrating flexible options for clients to pivot and build on top of.',
+                    description: 'Tamir is Palladom Solutions’ founder and lead developer. He feels most at home while wrestling with any sort of technological problem, from coding a simple landing page to creating advanced, customized data-base solutions. Tamir’s back-end development provides high-level technological products, while integrating flexible options for clients to pivot and build on top of.',
                     card: <TamirCard/>
                 },
                 steph: {
