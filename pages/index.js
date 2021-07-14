@@ -19,8 +19,8 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
     return (
         <div className={styles.main}>
             <Head>
-                <title>Palladom Solutions</title>
-                <meta name="description" content="Palladom Solutions is a full-service digital design and development agency that drives positive change around social, economic, and environmental issues."/>
+                <title>Palladom Solutions | Web Design & Development Company</title>
+                <meta name="description" content="Website design and development agency in Vancouver, Canada. Full-service digital web design & development, affordable best prices with SEO and Ecommerce for your business"/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
