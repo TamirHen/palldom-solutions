@@ -20,7 +20,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
         <div className={styles.main}>
             <Head>
                 <title>Palladom Solutions | Web Design & Development Company</title>
-                <meta name="description" content="Website design and development agency in Vancouver, Canada. Full-service digital web design & development, affordable best prices with SEO and Ecommerce for your business"/>
+                <meta name="description" content="Website design and development agency in Vancouver, Canada. Full-service digital web design & development, affordable best prices with SEO and Ecommerce for your business."/>
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
