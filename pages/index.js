@@ -21,7 +21,7 @@ export default function Home({workerPressedHandler, aboutSection, ourWorkSection
             <Head>
                 <title>Palladom Solutions | Web Design & Development Company</title>
                 <meta name="description"
-                      content="Website design and development agency in Vancouver, Canada. Full-service digital web design & development, affordable best prices with SEO and Ecommerce for your business."/>
+                      content="Website design and development agency in Vancouver, Canada. Full-service digital web design & development, affordable best prices with SEO and eCommerce for your business."/>
                 <link rel="icon" href="/favicon.ico"/>
                 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
