@@ -4,7 +4,7 @@ import styles from "../styles/Menus.module.scss";
 import Logo from "../assets/logo.svg";
 import Hamburger from "../assets/hamburger.svg";
 import LinkedinIcon from "../assets/linkedin.svg";
-import InstagramIcon from "../assets/instagram.svg";
+import FacebookIcon from "../assets/facebook.svg";
 import TwitterIcon from "../assets/twitter.svg";
 import SendUsMessageIcon from "../assets/sendUsMessageIcon.svg";
 import WorkerPopup from "./WorkerPopup";
@@ -23,7 +23,7 @@ const Menus = ({
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isMessageUsOpen, setIsMessageUsOpen] = useState(false);
     const linkedinUrl = "https://www.linkedin.com/company/palladom-solutions";
-    const instagramUrl = "/";
+    const facebookUrl = "https://www.facebook.com/palladomsolutions";
     const twitterUrl = "https://twitter.com/PalladomS";
     const router = useRouter();
 
@@ -58,8 +58,8 @@ const Menus = ({
                             <a target={"_blank"} className={styles.socialMedia}><LinkedinIcon
                                 className={styles.icon}/></a>
                         </Link>
-                        <Link href={instagramUrl}>
-                            <a target={"_blank"} className={styles.socialMedia}><InstagramIcon
+                        <Link href={facebookUrl}>
+                            <a target={"_blank"} className={`${styles.socialMedia} ${styles.facebookIcon}`}><FacebookIcon
                                 className={styles.icon}/></a>
                         </Link>
                         <Link href={twitterUrl}>
