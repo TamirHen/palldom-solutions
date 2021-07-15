@@ -89,12 +89,6 @@ const Layout = ({Component, pageProps}) => {
 
     return (
         <div className={styles.container}>
-            <Head>
-                <title>Palladom Solutions</title>
-                <meta name="description" content="Making your dream come true"/>
-                <link rel="icon" href="/favicon.ico"/>
-            </Head>
-
             <Menus activeWorker={activeWorker} setActiveWorker={setActiveWorker} isWorkerOpen={isWorkerOpen}
                    setIsWorkerOpen={setIsWorkerOpen} aboutSection={aboutSection} ourWorkSection={ourWorkSection}
                    contactSection={contactSection}/>
