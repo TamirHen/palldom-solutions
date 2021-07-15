@@ -499,13 +499,13 @@ $page-padding-left: 17%;
 
         .photo1 {
           margin-right: 0;
-          padding: 0 15%;
+          padding: 0 5%;
         }
 
         .photo2 {
           margin-left: 0;
           margin-top: 50px;
-          padding: 0 15%;
+          padding: 0 5%;
         }
 
       }
@@ -567,6 +567,15 @@ $page-padding-left: 17%;
 
     .sectionHome {
       margin-bottom: 450px;
+    }
+
+    .sectionAbout {
+      .imagesWrapper {
+
+        .photo1, .photo2 {
+          padding: 0;
+        }
+      }
     }
 
   }
